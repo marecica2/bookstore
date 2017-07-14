@@ -23,6 +23,7 @@ public class BookDAO extends AbstractDAO {
 	@PostConstruct
 	public void create() {
 		System.err.println("EEEEEEEEE");
+		System.err.println("EEEEEEEEE");
 		Book book = new Book();
 		book.setIsbn("ISBN");
 		book.setTitle("Title");
