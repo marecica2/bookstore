@@ -1,34 +1,33 @@
 package org.bmsource.dao;
 
-import javax.annotation.PostConstruct;
-import javax.ejb.Startup;
-import javax.ejb.Stateless;
+import java.util.Collection;
+import java.util.List;
 
-import org.bmsource.entity.Book;
+import javax.ejb.Stateless;
+import javax.persistence.TypedQuery;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
+
+import org.bmsource.bookstore.model.entity.Book;
 
 @Stateless
-@Startup
-public class BookDAO extends AbstractDAO {
+public class BookDAO extends AbstractDAO<Book> {
 
-	public Book saveBook(Book book) {
-		entityManager.persist(book);
-		entityManager.flush();
-		return book;
+	public BookDAO() {
+		super();
+		setType(Book.class);
 	}
 
-	public Book findById(Long id) {
-		return entityManager.find(Book.class, id);
+	public Collection<Book> findAll() {
+		CriteriaQuery<Book> cq = entityManager.getCriteriaBuilder().createQuery(Book.class);
+		Root<Book> rootEntry = cq.from(Book.class);
+
+		CriteriaQuery<Book> all = cq.select(rootEntry);
+		TypedQuery<Book> allQuery = entityManager.createQuery(all);
+
+		List<Book> books = allQuery.getResultList();
+		books.stream().forEach(book -> book.getAuthors());
+		return books;
 	}
 
-	@PostConstruct
-	public void create() {
-		System.err.println("EEEEEEEEE");
-		System.err.println("EEEEEEEEE");
-		Book book = new Book();
-		book.setIsbn("ISBN");
-		book.setTitle("Title");
-		entityManager.persist(book);
-		entityManager.flush();
-		System.err.println("EEEEEEEEE");
-	}
 }

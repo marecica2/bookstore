@@ -1,7 +1,13 @@
-package org.bmsource.entity;
+package org.bmsource.bookstore.model.entity;
+
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.ManyToMany;
 
+@Entity
 public class Author extends AbstractEntity {
 
 	@Column(name = "FIRST_NAME")
@@ -9,6 +15,9 @@ public class Author extends AbstractEntity {
 
 	@Column(name = "LAST_NAME")
 	private String lastName;
+
+	@ManyToMany(mappedBy = "authors")
+	private Set<Book> books = new HashSet<>();
 
 	public String getFirstName() {
 		return firstName;

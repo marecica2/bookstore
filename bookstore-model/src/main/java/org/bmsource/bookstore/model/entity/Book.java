@@ -1,16 +1,32 @@
-package org.bmsource.entity;
+package org.bmsource.bookstore.model.entity;
+
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.validation.constraints.NotNull;
 
 @Entity
 public class Book extends AbstractEntity {
 
+	@NotNull
 	@Column(name = "TITLE")
 	private String title;
 
+	@NotNull
 	@Column(name = "ISBN")
 	private String isbn;
+
+	@ManyToMany
+	@JoinTable(name = "BOOK_AUTHOR")
+	private Set<Author> authors = new HashSet<>();
+
+	public Set<Author> getAuthors() {
+		return authors;
+	}
 
 	public String getTitle() {
 		return title;
