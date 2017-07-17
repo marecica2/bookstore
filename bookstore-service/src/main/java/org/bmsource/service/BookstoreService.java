@@ -12,8 +12,8 @@ import org.bmsource.dao.BookDAO;
 import org.bmsource.dao.CustomerDAO;
 import org.bmsource.dao.OrderDAO;
 
-@Transactional
 @Stateless
+@Transactional
 public class BookstoreService {
 
 	@EJB
