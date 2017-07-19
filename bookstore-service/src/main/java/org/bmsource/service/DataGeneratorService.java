@@ -109,15 +109,15 @@ public class DataGeneratorService {
 
 	private void generateData() {
 		List<Author> authors = generateAuthors(5);
-		authors.stream().forEach(author -> authorDAO.save(author));
+		authors.stream().forEach(author -> authorDAO.create(author));
 
 		List<Book> books = generateBooks(15, authors);
-		books.stream().forEach(book -> bookDAO.save(book));
+		books.stream().forEach(book -> bookDAO.create(book));
 
 		List<Customer> customers = generateCustomers(10);
-		customers.stream().forEach(book -> customerDAO.save(book));
+		customers.stream().forEach(book -> customerDAO.create(book));
 
 		List<Order> orders = generateOrders(books, customers);
-		orders.stream().forEach(order -> orderDAO.save(order));
+		orders.stream().forEach(order -> orderDAO.create(order));
 	}
 }

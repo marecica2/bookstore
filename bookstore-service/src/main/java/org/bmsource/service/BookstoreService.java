@@ -29,15 +29,22 @@ public class BookstoreService {
 	private OrderDAO orderDAO;
 
 	public Collection<Book> getBooks() {
-		return bookDAO.findAll();
+		Collection<Book> books = bookDAO.findAll();
+		books.stream().forEach(book -> book.getAuthors().size());
+		return books;
 	}
 
 	public Book getBook(Long id) {
-		return bookDAO.byId(id);
+		Book book = bookDAO.byId(id);
+		return book;
 	}
 
-	public Book saveBook(Book book) {
-		return bookDAO.save(book);
+	public Book createBook(Book book) {
+		return bookDAO.create(book);
+	}
+
+	public Book updateBook(Book book) {
+		return bookDAO.update(book);
 	}
 
 }

@@ -4,7 +4,7 @@ import java.util.Collection;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
-import javax.ws.rs.BeanParam;
+import javax.transaction.Transactional;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -23,6 +23,7 @@ import org.bmsource.service.BookstoreService;
 @Stateless
 @Path("books")
 @Produces(MediaType.APPLICATION_JSON)
+@Transactional
 public class BookResource {
 
 	@EJB
@@ -41,17 +42,18 @@ public class BookResource {
 	}
 
 	@POST
-	public Response createCustomer(Book book, @Context UriInfo uriInfo) {
-		book = bookService.saveBook(book);
+	public Response createBook(Book book, @Context UriInfo uriInfo) {
+		book = bookService.createBook(book);
 		UriBuilder builder = uriInfo.getAbsolutePathBuilder();
 		builder.path(Long.toString(book.getId()));
 		return Response.created(builder.build()).build();
 	}
 
 	@PUT
-	public Response updateBook(@BeanParam Book book) {
-		bookService.saveBook(book);
-		return Response.accepted().build();
+	@Path("/{id}")
+	public Response updateBook(Book book) {
+		bookService.updateBook(book);
+		return Response.ok(book).build();
 	}
 
 }

@@ -21,8 +21,14 @@ public class AbstractDAO<T> {
 		return entityManager.find(type, id);
 	}
 
-	public T save(T entity) {
+	public T create(T entity) {
 		entityManager.persist(entity);
+		entityManager.flush();
+		return entity;
+	}
+
+	public T update(T entity) {
+		entityManager.merge(entity);
 		entityManager.flush();
 		return entity;
 	}
