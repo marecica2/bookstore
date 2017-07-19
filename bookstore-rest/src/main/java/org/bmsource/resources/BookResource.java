@@ -43,6 +43,7 @@ public class BookResource {
 
 	@POST
 	public Response createBook(Book book, @Context UriInfo uriInfo) {
+
 		book = bookService.createBook(book);
 		UriBuilder builder = uriInfo.getAbsolutePathBuilder();
 		builder.path(Long.toString(book.getId()));
