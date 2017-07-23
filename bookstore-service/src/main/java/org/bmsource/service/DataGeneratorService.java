@@ -13,6 +13,7 @@ import org.bmsource.bookstore.model.entity.Author;
 import org.bmsource.bookstore.model.entity.Book;
 import org.bmsource.bookstore.model.entity.Customer;
 import org.bmsource.bookstore.model.entity.Order;
+import org.bmsource.bookstore.model.entity.OrderProduct;
 import org.bmsource.dao.AuthorDAO;
 import org.bmsource.dao.BookDAO;
 import org.bmsource.dao.CustomerDAO;
@@ -36,7 +37,7 @@ public class DataGeneratorService {
 
 	@PostConstruct
 	public void init() {
-		// generateData();
+		generateData();
 	}
 
 	private List<Customer> generateCustomers(int size) {
@@ -88,7 +89,8 @@ public class DataGeneratorService {
 		for (int i = 0; i < size; i++) {
 			Book book = new Book();
 			book.setIsbn("ISBN" + System.currentTimeMillis());
-			book.setTitle(titles[randomGenerator.nextInt(titles.length)]);
+			book.setName(titles[randomGenerator.nextInt(titles.length)]);
+			book.setDescription(titles[randomGenerator.nextInt(titles.length)]);
 			book.getAuthors().add(authors.get(randomGenerator.nextInt(authors.size() - 1)));
 			ret.add(book);
 		}
@@ -98,12 +100,18 @@ public class DataGeneratorService {
 	private List<Order> generateOrders(List<Book> books, List<Customer> customers) {
 		List<Order> ret = new ArrayList<>();
 		Random randomGenerator = new Random();
-		for (int i = 0; i < randomGenerator.nextInt(10); i++) {
-			Order order = new Order();
-			for (int j = 0; j < randomGenerator.nextInt(4); j++) {
-				order.getBooks().add(books.get(randomGenerator.nextInt(books.size() - 1)));
+		customers.stream().forEach(customer -> {
+			for (int i = 0; i < randomGenerator.nextInt(5); i++) {
+				Order order = new Order();
+				for (int j = 0; j < randomGenerator.nextInt(3); j++) {
+					Book book = books.get(randomGenerator.nextInt(books.size() - 1));
+					OrderProduct op = new OrderProduct(randomGenerator.nextInt(3), book);
+					order.getOrderProducts().add(op);
+				}
+				order.setCustomer(customer);
+				customer.getOrders().add(order);
 			}
-		}
+		});
 		return ret;
 	}
 
@@ -115,7 +123,7 @@ public class DataGeneratorService {
 		books.stream().forEach(book -> bookDAO.create(book));
 
 		List<Customer> customers = generateCustomers(10);
-		customers.stream().forEach(book -> customerDAO.create(book));
+		customers.stream().forEach(customer -> customerDAO.create(customer));
 
 		List<Order> orders = generateOrders(books, customers);
 		orders.stream().forEach(order -> orderDAO.create(order));

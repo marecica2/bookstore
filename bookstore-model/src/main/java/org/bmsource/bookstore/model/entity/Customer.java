@@ -5,10 +5,15 @@ import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 
-@Entity(name = "CUSTOMER")
+@Entity
+@SequenceGenerator(name = "default_gen", sequenceName = "seq_customer")
+@Table(name = "CUSTOMER")
 public class Customer extends AbstractEntity {
 
 	@Column(name = "LOGIN", unique = true)
@@ -22,6 +27,9 @@ public class Customer extends AbstractEntity {
 
 	@OneToMany(targetEntity = Order.class, cascade = CascadeType.ALL, mappedBy = "customer")
 	private Set<Order> orders = new HashSet<>();
+
+	@Embedded
+	private Address address;
 
 	public String getFirstName() {
 		return firstName;

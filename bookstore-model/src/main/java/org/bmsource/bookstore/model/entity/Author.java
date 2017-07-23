@@ -6,8 +6,12 @@ import java.util.Set;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.ManyToMany;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 
 @Entity
+@SequenceGenerator(name = "default_gen", sequenceName = "seq_author")
+@Table(name = "AUTHOR")
 public class Author extends AbstractEntity {
 
 	@Column(name = "FIRST_NAME")

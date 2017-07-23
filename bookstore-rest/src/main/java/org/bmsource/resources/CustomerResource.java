@@ -17,44 +17,44 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
 import javax.ws.rs.core.UriInfo;
 
-import org.bmsource.bookstore.model.entity.Book;
+import org.bmsource.bookstore.model.entity.Customer;
 import org.bmsource.service.BookstoreService;
 
 @Stateless
-@Path("books")
+@Path("customers")
 @Produces(MediaType.APPLICATION_JSON)
 @Transactional
-public class BookResource {
+public class CustomerResource {
 
 	@EJB
 	private BookstoreService bss;
 
 	@GET
-	public Response getBooks() {
-		Collection<Book> books = bss.getBooks();
-		return Response.ok(books).build();
+	public Response getCustomers() {
+		Collection<Customer> customers = bss.getCustomers();
+		return Response.ok(customers).build();
 	}
 
 	@GET
 	@Path("/{id}")
-	public Response getBook(@PathParam("id") Long id) {
-		return Response.ok(bss.getBook(id)).build();
+	public Response getCustomer(@PathParam("id") Long id) {
+		return Response.ok(bss.getCustomer(id)).build();
 	}
 
 	@POST
-	public Response createBook(Book book, @Context UriInfo uriInfo) {
+	public Response createCustomer(Customer customer, @Context UriInfo uriInfo) {
 
-		book = bss.createBook(book);
+		customer = bss.createCustomer(customer);
 		UriBuilder builder = uriInfo.getAbsolutePathBuilder();
-		builder.path(Long.toString(book.getId()));
+		builder.path(Long.toString(customer.getId()));
 		return Response.created(builder.build()).build();
 	}
 
 	@PUT
 	@Path("/{id}")
-	public Response updateBook(Book book) {
-		bss.updateBook(book);
-		return Response.ok(book).build();
+	public Response updateCustomer(Customer customer) {
+		bss.updateCustomer(customer);
+		return Response.ok(customer).build();
 	}
 
 }
