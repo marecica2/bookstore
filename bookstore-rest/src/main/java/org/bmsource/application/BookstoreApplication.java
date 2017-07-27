@@ -8,6 +8,7 @@ import javax.ws.rs.core.Application;
 
 import org.bmsource.resources.BookResource;
 import org.bmsource.resources.CustomerResource;
+import org.bmsource.resources.OrderResource;
 
 @ApplicationPath("/bookstore")
 public class BookstoreApplication extends Application {
@@ -17,6 +18,7 @@ public class BookstoreApplication extends Application {
 		Set<Class<?>> classes = new HashSet<>();
 		classes.add(BookResource.class);
 		classes.add(CustomerResource.class);
+		classes.add(OrderResource.class);
 		return classes;
 	}
 }

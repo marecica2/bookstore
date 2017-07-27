@@ -8,6 +8,7 @@ import javax.transaction.Transactional;
 
 import org.bmsource.bookstore.model.entity.Book;
 import org.bmsource.bookstore.model.entity.Customer;
+import org.bmsource.bookstore.model.entity.Order;
 import org.bmsource.dao.AuthorDAO;
 import org.bmsource.dao.BookDAO;
 import org.bmsource.dao.CustomerDAO;
@@ -66,4 +67,21 @@ public class BookstoreService {
 		return customerDAO.update(customer);
 	}
 
+	public Collection<Order> getOrders() {
+		Collection<Order> customers = orderDAO.findAll();
+		return customers;
+	}
+
+	public Order getOrder(Long id) {
+		Order customer = orderDAO.byId(id);
+		return customer;
+	}
+
+	public Order createOrder(Order customer) {
+		return orderDAO.create(customer);
+	}
+
+	public Order updateOrder(Order customer) {
+		return orderDAO.update(customer);
+	}
 }

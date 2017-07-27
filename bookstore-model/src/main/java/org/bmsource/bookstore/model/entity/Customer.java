@@ -58,4 +58,9 @@ public class Customer extends AbstractEntity {
 	public Set<Order> getOrders() {
 		return orders;
 	}
+
+	@Override
+	public String toString() {
+		return "Customer [firstName=" + firstName + ", lastName=" + lastName + "]";
+	}
 }

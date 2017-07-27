@@ -1,30 +1,47 @@
 package org.bmsource.bookstore.model.entity;
 
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.SequenceGenerator;
+import javax.persistence.MapsId;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "ORDER_PRODUCT")
-@SequenceGenerator(name = "default_gen", sequenceName = "seq_order_seq")
-public class OrderProduct extends AbstractEntity {
+public class OrderProduct {
 
 	private Integer quantity = 1;
 
+	@EmbeddedId
+	private Pk id;
+
 	@ManyToOne
 	@JoinColumn(name = "PRODUCT_ID", referencedColumnName = "ID")
+	@MapsId("productId")
 	private Product product;
+
+	@ManyToOne
+	@MapsId("orderId")
+	@JoinColumn(name = "ORDER_ID", referencedColumnName = "ID")
+	private Order order;
 
 	public OrderProduct() {
 		super();
+		this.id = new Pk();
 	}
 
-	public OrderProduct(Integer quantity, Product product) {
-		super();
-		this.quantity = quantity;
-		this.product = product;
+	public Order getOrder() {
+		return order;
+	}
+
+	public void setOrder(Order order) {
+		this.order = order;
+		this.id.orderId = order.getId();
 	}
 
 	public Integer getQuantity() {
@@ -41,6 +58,48 @@ public class OrderProduct extends AbstractEntity {
 
 	public void setProduct(Product product) {
 		this.product = product;
+		this.id.productId = product.getId();
 	}
 
+	@Override
+	public String toString() {
+		return "OrderProduct [id=" + id + ", product=" + product + ", order=" + order + "]";
+	}
+
+	@Embeddable
+	public static class Pk implements Serializable {
+
+		private static final long serialVersionUID = 3029784118390859506L;
+
+		@Column(name = "PRODUCT_ID")
+		private long productId;
+
+		@Column(name = "ORDER_ID")
+		private long orderId;
+
+		@Override
+		public int hashCode() {
+			final int prime = 31;
+			int result = 1;
+			result = prime * result + (int) (orderId ^ (orderId >>> 32));
+			result = prime * result + (int) (productId ^ (productId >>> 32));
+			return result;
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj)
+				return true;
+			if (obj == null)
+				return false;
+			if (getClass() != obj.getClass())
+				return false;
+			Pk other = (Pk) obj;
+			if (orderId != other.orderId)
+				return false;
+			if (productId != other.productId)
+				return false;
+			return true;
+		}
+	}
 }

@@ -31,11 +31,10 @@ public class Order extends AbstractEntity {
 	@JoinColumn(name = "CUSTOMER_ID", nullable = false)
 	private Customer customer;
 
-	// @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL,
-	// orphanRemoval = true, mappedBy = "order")
+	// unidirectional one to many without join table (possible since jpa 2.0)
 	@OneToMany(orphanRemoval = true, cascade = CascadeType.ALL)
-	@JoinColumn(name = "ORDER_ID") // join column is in table for Order
-	public Set<OrderProduct> orderProducts = new HashSet<>();
+	@JoinColumn(name = "ORDER_ID")
+	private Set<OrderProduct> orderProducts = new HashSet<>();
 
 	public Status getStatus() {
 		return status;
@@ -57,4 +56,8 @@ public class Order extends AbstractEntity {
 		return orderProducts;
 	}
 
+	@Override
+	public String toString() {
+		return "Order [orderProducts=" + orderProducts + ", getId()=" + getId() + "]";
+	}
 }

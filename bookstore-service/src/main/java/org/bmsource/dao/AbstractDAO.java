@@ -50,4 +50,8 @@ public class AbstractDAO<T> {
 		return items;
 	}
 
+	public EntityManager getEntityManager() {
+		return entityManager;
+	}
+
 }

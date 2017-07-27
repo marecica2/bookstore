@@ -41,4 +41,8 @@ public class Product extends AbstractEntity {
 		this.description = description;
 	}
 
+	@Override
+	public String toString() {
+		return "Product [name=" + name + ", description=" + description + ", getId()=" + getId() + "]";
+	}
 }

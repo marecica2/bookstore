@@ -103,13 +103,19 @@ public class DataGeneratorService {
 		customers.stream().forEach(customer -> {
 			for (int i = 0; i < randomGenerator.nextInt(5); i++) {
 				Order order = new Order();
-				for (int j = 0; j < randomGenerator.nextInt(3); j++) {
-					Book book = books.get(randomGenerator.nextInt(books.size() - 1));
-					OrderProduct op = new OrderProduct(randomGenerator.nextInt(3), book);
-					order.getOrderProducts().add(op);
-				}
 				order.setCustomer(customer);
 				customer.getOrders().add(order);
+				orderDAO.create(order);
+
+				for (int j = 0; j < randomGenerator.nextInt(3) + 1; j++) {
+					Book book = books.get(randomGenerator.nextInt(books.size() - 1));
+					OrderProduct op = new OrderProduct();
+					op.setProduct(book);
+					op.setQuantity(randomGenerator.nextInt(4) + 1);
+					op.setOrder(order);
+					order.getOrderProducts().add(op);
+					orderDAO.getEntityManager().flush();
+				}
 			}
 		});
 		return ret;

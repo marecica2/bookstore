@@ -11,6 +11,10 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.bmsource</groupId>
+			<artifactId>bookstore-model</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.bmsource</groupId>
 			<artifactId>bookstore-service</artifactId>
 		</dependency>
 	</dependencies>
