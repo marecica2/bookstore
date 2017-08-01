@@ -18,7 +18,7 @@ public abstract class AbstractEntity {
 	@Id
 	@Column(name = "ID")
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "default_gen")
-	private long id;
+	long id;
 
 	@Version
 	@Column(name = "version", columnDefinition = "integer DEFAULT 0", nullable = false)

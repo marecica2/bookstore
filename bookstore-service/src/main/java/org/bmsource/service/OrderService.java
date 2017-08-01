@@ -2,7 +2,6 @@ package org.bmsource.service;
 
 import java.util.Collection;
 
-import javax.ejb.DependsOn;
 import javax.ejb.EJB;
 import javax.ejb.Singleton;
 import javax.transaction.Transactional;
@@ -10,11 +9,10 @@ import javax.transaction.Transactional;
 import org.bmsource.bookstore.model.entity.Order;
 import org.bmsource.dao.AuthorDAO;
 import org.bmsource.dao.BookDAO;
-import org.bmsource.dao.CustomerDAO;
 import org.bmsource.dao.OrderDAO;
+import org.bmsource.dao.UserDAO;
 
 @Singleton
-@DependsOn("DataGeneratorService")
 @Transactional
 public class OrderService {
 
@@ -25,18 +23,18 @@ public class OrderService {
 	private AuthorDAO authorDAO;
 
 	@EJB
-	private CustomerDAO customerDAO;
+	private UserDAO customerDAO;
 
 	@EJB
 	private OrderDAO orderDAO;
 
 	public Collection<Order> testLazyEager() {
+		System.out.println("testLazyEager");
 		Collection<Order> orders = orderDAO.findAll();
-		orders.forEach(order -> {
-			System.out.println(order);
-			System.out.println(order.getOrderProducts());
-		});
-		return orders;
+		// orders.forEach(order -> {
+		// System.out.println();
+		// });
+		return null;
 	}
 
 }

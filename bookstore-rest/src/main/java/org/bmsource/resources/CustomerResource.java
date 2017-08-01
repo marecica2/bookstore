@@ -17,7 +17,7 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
 import javax.ws.rs.core.UriInfo;
 
-import org.bmsource.bookstore.model.entity.Customer;
+import org.bmsource.bookstore.model.entity.User;
 import org.bmsource.service.BookstoreService;
 
 @Stateless
@@ -31,7 +31,7 @@ public class CustomerResource {
 
 	@GET
 	public Response getCustomers() {
-		Collection<Customer> customers = bss.getCustomers();
+		Collection<User> customers = bss.getCustomers();
 		return Response.ok(customers).build();
 	}
 
@@ -42,7 +42,7 @@ public class CustomerResource {
 	}
 
 	@POST
-	public Response createCustomer(Customer customer, @Context UriInfo uriInfo) {
+	public Response createCustomer(User customer, @Context UriInfo uriInfo) {
 
 		customer = bss.createCustomer(customer);
 		UriBuilder builder = uriInfo.getAbsolutePathBuilder();
@@ -52,7 +52,7 @@ public class CustomerResource {
 
 	@PUT
 	@Path("/{id}")
-	public Response updateCustomer(Customer customer) {
+	public Response updateCustomer(User customer) {
 		bss.updateCustomer(customer);
 		return Response.ok(customer).build();
 	}

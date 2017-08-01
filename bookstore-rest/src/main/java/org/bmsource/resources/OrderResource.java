@@ -35,15 +35,15 @@ public class OrderResource {
 
 	@GET
 	public Response getOrders() {
-		Collection<Order> orders = bss.getOrders();
-		orders = os.testLazyEager();
+		Collection<Order> orders = os.testLazyEager();
 		return Response.ok(orders).build();
 	}
 
 	@GET
 	@Path("/{id}")
 	public Response getOrder(@PathParam("id") Long id) {
-		return Response.ok(bss.getOrder(id)).build();
+		Order order = bss.getOrder(id);
+		return Response.ok(order).build();
 	}
 
 	@POST

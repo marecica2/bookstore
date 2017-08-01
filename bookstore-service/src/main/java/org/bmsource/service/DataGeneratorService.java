@@ -11,13 +11,15 @@ import javax.ejb.Startup;
 
 import org.bmsource.bookstore.model.entity.Author;
 import org.bmsource.bookstore.model.entity.Book;
-import org.bmsource.bookstore.model.entity.Customer;
+import org.bmsource.bookstore.model.entity.Content;
 import org.bmsource.bookstore.model.entity.Order;
 import org.bmsource.bookstore.model.entity.OrderProduct;
+import org.bmsource.bookstore.model.entity.Role;
+import org.bmsource.bookstore.model.entity.User;
 import org.bmsource.dao.AuthorDAO;
 import org.bmsource.dao.BookDAO;
-import org.bmsource.dao.CustomerDAO;
 import org.bmsource.dao.OrderDAO;
+import org.bmsource.dao.UserDAO;
 
 @Singleton
 @Startup
@@ -30,7 +32,7 @@ public class DataGeneratorService {
 	private AuthorDAO authorDAO;
 
 	@EJB
-	private CustomerDAO customerDAO;
+	private UserDAO customerDAO;
 
 	@EJB
 	private OrderDAO orderDAO;
@@ -40,8 +42,8 @@ public class DataGeneratorService {
 		generateData();
 	}
 
-	private List<Customer> generateCustomers(int size) {
-		List<Customer> ret = new ArrayList<>();
+	private List<User> generateUsers(int size, List<Role> roles) {
+		List<User> ret = new ArrayList<>();
 
 		String firstNames[] = { "Mary", "Patricia", "Linda", "Barbara", "Elizabeth", "James", "John", "Robert",
 				"Michael", "William" };
@@ -50,9 +52,11 @@ public class DataGeneratorService {
 
 		Random randomGenerator = new Random();
 		for (int i = 0; i < size; i++) {
-			Customer customer = new Customer();
+			User customer = new User();
 			customer.setFirstName(firstNames[randomGenerator.nextInt(10)]);
 			customer.setLastName(lastNames[randomGenerator.nextInt(10)]);
+			customer.getSettings().put("locale", "en");
+			customer.setRole(roles.get(0));
 			ret.add(customer);
 		}
 		return ret;
@@ -92,29 +96,38 @@ public class DataGeneratorService {
 			book.setName(titles[randomGenerator.nextInt(titles.length)]);
 			book.setDescription(titles[randomGenerator.nextInt(titles.length)]);
 			book.getAuthors().add(authors.get(randomGenerator.nextInt(authors.size() - 1)));
+			Content content = new Content();
+			content.setContentType("text");
+			content.setContent(book.getDescription().getBytes());
+			book.setContent(content);
 			ret.add(book);
 		}
 		return ret;
 	}
 
-	private List<Order> generateOrders(List<Book> books, List<Customer> customers) {
+	private List<Order> generateOrders(List<Book> books, List<User> customers) {
 		List<Order> ret = new ArrayList<>();
 		Random randomGenerator = new Random();
-		customers.stream().forEach(customer -> {
+		customers.stream().forEach(user -> {
 			for (int i = 0; i < randomGenerator.nextInt(5); i++) {
 				Order order = new Order();
-				order.setCustomer(customer);
-				customer.getOrders().add(order);
+				order.setUser(user);
+				user.getOrders().add(order);
 				orderDAO.create(order);
 
 				for (int j = 0; j < randomGenerator.nextInt(3) + 1; j++) {
+
 					Book book = books.get(randomGenerator.nextInt(books.size() - 1));
 					OrderProduct op = new OrderProduct();
 					op.setProduct(book);
 					op.setQuantity(randomGenerator.nextInt(4) + 1);
 					op.setOrder(order);
 					order.getOrderProducts().add(op);
-					orderDAO.getEntityManager().flush();
+					try {
+						orderDAO.getEntityManager().flush();
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
 				}
 			}
 		});
@@ -128,10 +141,20 @@ public class DataGeneratorService {
 		List<Book> books = generateBooks(15, authors);
 		books.stream().forEach(book -> bookDAO.create(book));
 
-		List<Customer> customers = generateCustomers(10);
-		customers.stream().forEach(customer -> customerDAO.create(customer));
+		List<Role> roles = generateRoles();
 
-		List<Order> orders = generateOrders(books, customers);
+		List<User> users = generateUsers(10, roles);
+		users.stream().forEach(customer -> customerDAO.create(customer));
+
+		List<Order> orders = generateOrders(books, users);
 		orders.stream().forEach(order -> orderDAO.create(order));
+	}
+
+	private List<Role> generateRoles() {
+		Role role = new Role();
+		role.setRole("basic");
+		List<Role> roles = new ArrayList<>();
+		roles.add(role);
+		return roles;
 	}
 }

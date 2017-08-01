@@ -54,4 +54,8 @@ public class AbstractDAO<T> {
 		return entityManager;
 	}
 
+	protected void setEntityManager(EntityManager em) {
+		this.entityManager = em;
+	}
+
 }

@@ -7,11 +7,11 @@ import javax.ejb.Stateless;
 import javax.transaction.Transactional;
 
 import org.bmsource.bookstore.model.entity.Book;
-import org.bmsource.bookstore.model.entity.Customer;
+import org.bmsource.bookstore.model.entity.User;
 import org.bmsource.bookstore.model.entity.Order;
 import org.bmsource.dao.AuthorDAO;
 import org.bmsource.dao.BookDAO;
-import org.bmsource.dao.CustomerDAO;
+import org.bmsource.dao.UserDAO;
 import org.bmsource.dao.OrderDAO;
 
 @Stateless
@@ -25,7 +25,7 @@ public class BookstoreService {
 	private AuthorDAO authorDAO;
 
 	@EJB
-	private CustomerDAO customerDAO;
+	private UserDAO customerDAO;
 
 	@EJB
 	private OrderDAO orderDAO;
@@ -49,21 +49,21 @@ public class BookstoreService {
 		return bookDAO.update(book);
 	}
 
-	public Collection<Customer> getCustomers() {
-		Collection<Customer> customers = customerDAO.findAll();
+	public Collection<User> getCustomers() {
+		Collection<User> customers = customerDAO.findAll();
 		return customers;
 	}
 
-	public Customer getCustomer(Long id) {
-		Customer customer = customerDAO.byId(id);
+	public User getCustomer(Long id) {
+		User customer = customerDAO.byId(id);
 		return customer;
 	}
 
-	public Customer createCustomer(Customer customer) {
+	public User createCustomer(User customer) {
 		return customerDAO.create(customer);
 	}
 
-	public Customer updateCustomer(Customer customer) {
+	public User updateCustomer(User customer) {
 		return customerDAO.update(customer);
 	}
 

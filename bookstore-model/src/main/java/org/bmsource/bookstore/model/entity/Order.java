@@ -28,8 +28,8 @@ public class Order extends AbstractEntity {
 	private Status status = Status.NEW;
 
 	@ManyToOne
-	@JoinColumn(name = "CUSTOMER_ID", nullable = false)
-	private Customer customer;
+	@JoinColumn(name = "USER_ID", nullable = false)
+	private User user;
 
 	// unidirectional one to many without join table (possible since jpa 2.0)
 	@OneToMany(orphanRemoval = true, cascade = CascadeType.ALL)
@@ -44,12 +44,12 @@ public class Order extends AbstractEntity {
 		this.status = status;
 	}
 
-	public Customer getCustomer() {
-		return customer;
+	public User getUser() {
+		return user;
 	}
 
-	public void setCustomer(Customer customer) {
-		this.customer = customer;
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	public Set<OrderProduct> getOrderProducts() {
@@ -58,6 +58,6 @@ public class Order extends AbstractEntity {
 
 	@Override
 	public String toString() {
-		return "Order [orderProducts=" + orderProducts + ", getId()=" + getId() + "]";
+		return "Order [status=" + status + ", id=" + id + "]";
 	}
 }
