@@ -1,15 +1,20 @@
 package org.bmsource.dao;
 
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.ejb.Stateless;
+import javax.persistence.EntityGraph;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.PersistenceContextType;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
+
+import org.bmsource.bookstore.model.entity.Order;
 
 @Stateless
 public class AbstractDAO<T> {
@@ -25,6 +30,14 @@ public class AbstractDAO<T> {
 
 	public T byId(Long id) {
 		return entityManager.find(type, id);
+	}
+
+	public Order byId(Long id, String fetchGraph) {
+		EntityGraph<?> graph = entityManager.getEntityGraph(fetchGraph);
+		Map<String, Object> hints = new HashMap<>();
+		hints.put("javax.persistence.fetchgraph", graph);
+
+		return entityManager.find(Order.class, id, hints);
 	}
 
 	public T create(T entity) {

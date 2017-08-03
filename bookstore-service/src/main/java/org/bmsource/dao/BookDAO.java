@@ -18,6 +18,7 @@ public class BookDAO extends AbstractDAO<Book> {
 		setType(Book.class);
 	}
 
+	@Override
 	public Collection<Book> findAll() {
 		CriteriaQuery<Book> cq = entityManager.getCriteriaBuilder().createQuery(Book.class);
 		Root<Book> rootEntry = cq.from(Book.class);
@@ -29,5 +30,4 @@ public class BookDAO extends AbstractDAO<Book> {
 		books.stream().forEach(book -> book.getAuthors());
 		return books;
 	}
-
 }

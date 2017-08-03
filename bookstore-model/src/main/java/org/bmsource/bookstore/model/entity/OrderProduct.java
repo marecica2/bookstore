@@ -6,6 +6,7 @@ import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.MapsId;
@@ -20,12 +21,11 @@ public class OrderProduct {
 	@EmbeddedId
 	private Pk id;
 
-	@ManyToOne
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "PRODUCT_ID", referencedColumnName = "ID")
 	@MapsId("productId")
 	private Product product;
 
-	@ManyToOne
 	@MapsId("orderId")
 	@JoinColumn(name = "ORDER_ID", referencedColumnName = "ID")
 	private Order order;
