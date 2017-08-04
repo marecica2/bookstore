@@ -26,6 +26,7 @@ public class OrderProduct {
 	@MapsId("productId")
 	private Product product;
 
+	@ManyToOne(fetch = FetchType.LAZY)
 	@MapsId("orderId")
 	@JoinColumn(name = "ORDER_ID", referencedColumnName = "ID")
 	private Order order;
@@ -63,7 +64,7 @@ public class OrderProduct {
 
 	@Override
 	public String toString() {
-		return "OrderProduct [id=" + id + ", product=" + product + "]";
+		return "OrderProduct [id=" + id + "]";
 	}
 
 	@Override

@@ -24,8 +24,8 @@ import javax.persistence.Table;
 @SequenceGenerator(name = "default_gen", sequenceName = "seq_order")
 @NamedEntityGraphs({
 		@NamedEntityGraph(name = Order.PRODUCTS, attributeNodes = @NamedAttributeNode("orderProducts")),
-		@NamedEntityGraph(name = Order.PRODUCTS_PRODUCT, attributeNodes = @NamedAttributeNode("orderProducts"), subgraphs = {
-				@NamedSubgraph(name = Order.PRODUCTS_PRODUCT, attributeNodes = @NamedAttributeNode("product")) }),
+		@NamedEntityGraph(name = Order.PRODUCTS_PRODUCT, attributeNodes = @NamedAttributeNode(value = "orderProducts", subgraph = "xxx"), subgraphs = {
+				@NamedSubgraph(name = "xxx", attributeNodes = @NamedAttributeNode("product")) }),
 		@NamedEntityGraph(name = Order.ALL, includeAllAttributes = true),
 })
 public class Order extends AbstractEntity {
