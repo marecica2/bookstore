@@ -42,6 +42,13 @@ public class OrderProduct {
 		this.id = new Pk();
 	}
 
+	public OrderProduct(Long orderId, Long productId) {
+		super();
+		this.id = new Pk();
+		this.id.orderId = orderId;
+		this.id.productId = productId;
+	}
+
 	public Color getColor() {
 		return color;
 	}

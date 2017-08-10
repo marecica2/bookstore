@@ -71,4 +71,13 @@ public class AbstractDAO<T> {
 		this.entityManager = em;
 	}
 
+	/**
+	 * Not needed when hibernate.use_sql_comments=true
+	 * 
+	 * @param typedQuery
+	 */
+	void printQuery(TypedQuery<?> typedQuery) {
+		System.err.println("QUERY : " + typedQuery.unwrap(org.hibernate.Query.class).getQueryString());
+	}
+
 }

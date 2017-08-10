@@ -6,6 +6,8 @@ import java.util.Set;
 import javax.persistence.Cacheable;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
+import javax.persistence.ColumnResult;
+import javax.persistence.ConstructorResult;
 import javax.persistence.Entity;
 import javax.persistence.EntityResult;
 import javax.persistence.EnumType;
@@ -39,17 +41,22 @@ import javax.persistence.Table;
 })
 
 @NamedNativeQueries({
-		@NamedNativeQuery(name = Order.NAMED_NATIVE_QUERY_ORDERS_SIMPLE, query = "select o.user_id as user_id, o.version as version, o.createdDate as createdDate, o.lastModifiedDate as lastModifiedDate, o.id as order_id, o.status as order_status from bookstore.`ORDER` o", resultSetMapping = Order.SQL_RESULT_SET_MAPPING_BASIC) })
+		@NamedNativeQuery(name = Order.NAMED_QUERY, query = "select op.product_id as productId, o.user_id as userId, o.version as version, o.createdDate as createdDate, o.lastModifiedDate as lastModifiedDate, o.id as orderId, o.status as orderStatus from bookstore.`ORDER` o LEFT OUTER JOIN bookstore.ORDER_PRODUCT op on op.ORDER_ID = o.ID", resultSetMapping = Order.SQL_RESULT_SET_MAPPING_BASIC) })
 
 @SqlResultSetMappings({
 		@SqlResultSetMapping(name = Order.SQL_RESULT_SET_MAPPING_BASIC, entities = {
 				@EntityResult(entityClass = Order.class, fields = {
-						@FieldResult(name = "user", column = "user_id"),
+						@FieldResult(name = "user", column = "userId"),
 						@FieldResult(name = "version", column = "version"),
 						@FieldResult(name = "createdDate", column = "createdDate"),
 						@FieldResult(name = "lastModifiedDate", column = "lastModifiedDate"),
-						@FieldResult(name = "id", column = "order_id"),
-						@FieldResult(name = "status", column = "order_status")
+						@FieldResult(name = "id", column = "orderId"),
+						@FieldResult(name = "status", column = "orderStatus")
+				}) },
+
+				classes = { @ConstructorResult(targetClass = OrderProduct.class, columns = {
+						@ColumnResult(name = "orderId", type = Long.class),
+						@ColumnResult(name = "productId", type = Long.class)
 				}) }
 
 		)
@@ -57,11 +64,11 @@ import javax.persistence.Table;
 public class Order extends AbstractEntity {
 
 	public static final String SQL_RESULT_SET_MAPPING_BASIC = "basic";
-	public static final String NAMED_NATIVE_QUERY_ORDERS_SIMPLE = "find.all.products";
 	public static final String PRODUCTS = "graph.order.products";
 	public static final String PRODUCTS_PRODUCT = "graph.order.products.product";
 	public static final String USER = "graph.order.user";
 	public static final String ALL = "graph.order.all";
+	public static final String NAMED_QUERY = "findAllProducts";
 
 	public static enum Status {
 		NEW, PAID, IN_PROGRESS, EXPEDITED, DELIVERED, CANCELLED

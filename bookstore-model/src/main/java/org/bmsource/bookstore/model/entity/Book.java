@@ -8,6 +8,7 @@ import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OrderColumn;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
@@ -21,6 +22,7 @@ public class Book extends Product {
 	private String isbn;
 
 	@ManyToMany
+	@OrderColumn
 	@JoinTable(name = "BOOK_AUTHOR")
 	private Set<Author> authors = new HashSet<>();
 
