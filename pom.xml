@@ -13,7 +13,6 @@
 
 		<version.org.jboss.arquillian>1.1.5.Final</version.org.jboss.arquillian>
 		<version.org.wildfly>8.1.0.Final</version.org.wildfly>
-		<version.junit>4.12</version.junit>
 	</properties>
 
 	<modules>
@@ -93,11 +92,6 @@
 			<artifactId>arquillian-junit-container</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.jboss.arquillian.protocol</groupId>
-			<artifactId>arquillian-protocol-servlet</artifactId>
-			<scope>test</scope>
-		</dependency>
 	</dependencies>
 
 	<dependencyManagement>
@@ -126,7 +120,6 @@
 				<version>4.12</version>
 				<scope>test</scope>
 			</dependency>
-
 			<dependency>
 				<groupId>org.jboss.arquillian</groupId>
 				<artifactId>arquillian-bom</artifactId>

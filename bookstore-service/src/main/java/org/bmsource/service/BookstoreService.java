@@ -7,12 +7,12 @@ import javax.ejb.Stateless;
 import javax.transaction.Transactional;
 
 import org.bmsource.bookstore.model.entity.Book;
-import org.bmsource.bookstore.model.entity.User;
 import org.bmsource.bookstore.model.entity.Order;
+import org.bmsource.bookstore.model.entity.User;
 import org.bmsource.dao.AuthorDAO;
 import org.bmsource.dao.BookDAO;
-import org.bmsource.dao.UserDAO;
 import org.bmsource.dao.OrderDAO;
+import org.bmsource.dao.UserDAO;
 
 @Stateless
 @Transactional
