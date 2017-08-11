@@ -3,7 +3,6 @@ package org.bmsource.bookstore.model.entity;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.persistence.Cacheable;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.ColumnResult;
@@ -28,7 +27,6 @@ import javax.persistence.SqlResultSetMapping;
 import javax.persistence.SqlResultSetMappings;
 import javax.persistence.Table;
 
-@Cacheable
 @Entity
 @Table(name = "\"ORDER\"")
 @SequenceGenerator(name = "default_gen", sequenceName = "seq_order")
