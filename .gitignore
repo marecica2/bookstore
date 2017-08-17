@@ -2,7 +2,3 @@
 .project
 .settings/
 target/
-/bookstore-ear/
-/bookstore-model/
-/bookstore-rest/
-/bookstore-service/

@@ -1,4 +1,4 @@
-package org.bmsource.service;
+package org.bmsource.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ import org.bmsource.dao.UserDAO;
 
 @Singleton
 @Startup
-public class DataGeneratorService {
+public class DataGeneratorServiceEjb {
 
 	@EJB
 	private BookDAO bookDAO;

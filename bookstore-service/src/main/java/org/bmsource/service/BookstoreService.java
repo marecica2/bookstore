@@ -2,86 +2,103 @@ package org.bmsource.service;
 
 import java.util.Collection;
 
-import javax.ejb.EJB;
-import javax.ejb.Stateless;
-import javax.transaction.Transactional;
-
 import org.bmsource.bookstore.model.entity.Book;
 import org.bmsource.bookstore.model.entity.Order;
 import org.bmsource.bookstore.model.entity.User;
-import org.bmsource.dao.AuthorDAO;
-import org.bmsource.dao.BookDAO;
-import org.bmsource.dao.OrderDAO;
-import org.bmsource.dao.UserDAO;
 
-@Stateless
-@Transactional
-public class BookstoreService {
+public interface BookstoreService {
 
-	@EJB
-	private BookDAO bookDAO;
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.bmsource.service.impl.BookstoreService#getBooks()
+	 */
+	Collection<Book> getBooks();
 
-	@EJB
-	private AuthorDAO authorDAO;
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.bmsource.service.impl.BookstoreService#getBook(java.lang.Long)
+	 */
+	Book getBook(Long id);
 
-	@EJB
-	private UserDAO customerDAO;
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.bmsource.service.impl.BookstoreService#createBook(org.bmsource.
+	 * bookstore.model.entity.Book)
+	 */
+	Book createBook(Book book);
 
-	@EJB
-	private OrderDAO orderDAO;
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.bmsource.service.impl.BookstoreService#updateBook(org.bmsource.
+	 * bookstore.model.entity.Book)
+	 */
+	Book updateBook(Book book);
 
-	public Collection<Book> getBooks() {
-		Collection<Book> books = bookDAO.findAll();
-		books.stream().forEach(book -> book.getAuthors().size());
-		return books;
-	}
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.bmsource.service.impl.BookstoreService#getCustomers()
+	 */
+	Collection<User> getCustomers();
 
-	public Book getBook(Long id) {
-		Book book = bookDAO.byId(id);
-		return book;
-	}
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.bmsource.service.impl.BookstoreService#getCustomer(java.lang.Long)
+	 */
+	User getCustomer(Long id);
 
-	public Book createBook(Book book) {
-		return bookDAO.create(book);
-	}
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.bmsource.service.impl.BookstoreService#createCustomer(org.bmsource.
+	 * bookstore.model.entity.User)
+	 */
+	User createCustomer(User customer);
 
-	public Book updateBook(Book book) {
-		return bookDAO.update(book);
-	}
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see
+	 * org.bmsource.service.impl.BookstoreService#updateCustomer(org.bmsource.
+	 * bookstore.model.entity.User)
+	 */
+	User updateCustomer(User customer);
 
-	public Collection<User> getCustomers() {
-		Collection<User> customers = customerDAO.findAll();
-		return customers;
-	}
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.bmsource.service.impl.BookstoreService#getOrders()
+	 */
+	Collection<Order> getOrders();
 
-	public User getCustomer(Long id) {
-		User customer = customerDAO.byId(id);
-		return customer;
-	}
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.bmsource.service.impl.BookstoreService#getOrder(java.lang.Long)
+	 */
+	Order getOrder(Long id);
 
-	public User createCustomer(User customer) {
-		return customerDAO.create(customer);
-	}
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.bmsource.service.impl.BookstoreService#createOrder(org.bmsource.
+	 * bookstore.model.entity.Order)
+	 */
+	Order createOrder(Order customer);
 
-	public User updateCustomer(User customer) {
-		return customerDAO.update(customer);
-	}
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see org.bmsource.service.impl.BookstoreService#updateOrder(org.bmsource.
+	 * bookstore.model.entity.Order)
+	 */
+	Order updateOrder(Order customer);
 
-	public Collection<Order> getOrders() {
-		Collection<Order> customers = orderDAO.findAll();
-		return customers;
-	}
-
-	public Order getOrder(Long id) {
-		Order customer = orderDAO.byId(id);
-		return customer;
-	}
-
-	public Order createOrder(Order customer) {
-		return orderDAO.create(customer);
-	}
-
-	public Order updateOrder(Order customer) {
-		return orderDAO.update(customer);
-	}
 }
