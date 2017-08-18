@@ -17,7 +17,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @RunWith(Arquillian.class)
-public class BookStoreServiceItTest {
+public class BookStoreServiceIT {
 
 	@EJB(lookup = "java:global/test/BookstoreServiceEjb!org.bmsource.service.BookstoreService")
 	BookstoreService bookstoreService;
