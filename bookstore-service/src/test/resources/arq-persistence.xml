@@ -7,6 +7,15 @@
 	<persistence-unit name="bookstoreDS" transaction-type="JTA">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<jta-data-source>java:/datasources/bookstoreDS</jta-data-source>
+        <class>org.bmsource.bookstore.model.entity.Book</class>
+        <class>org.bmsource.bookstore.model.entity.Content</class>
+        <class>org.bmsource.bookstore.model.entity.Order</class>
+        <class>org.bmsource.bookstore.model.entity.Product</class>
+        <class>org.bmsource.bookstore.model.entity.OrderProduct</class>
+        <class>org.bmsource.bookstore.model.entity.Role</class>
+        <class>org.bmsource.bookstore.model.entity.User</class>
+        <class>org.bmsource.bookstore.model.entity.Author</class>
+        <class>org.bmsource.bookstore.model.entity.AbstractEntity</class>		
 		<properties>
 			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create" />
 			<property name="javax.persistence.schema-generation.create-source" value="script-then-metadata" />

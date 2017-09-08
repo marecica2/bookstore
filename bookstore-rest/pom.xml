@@ -7,6 +7,23 @@
 	</parent>
 	<artifactId>bookstore-rest</artifactId>
 	<packaging>war</packaging>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.1.0</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>	
 	
 	<dependencies>
 		<dependency>
@@ -16,7 +33,14 @@
 		<dependency>
 			<groupId>org.bmsource</groupId>
 			<artifactId>bookstore-service</artifactId>
+			<type>ejb-client</type>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>		
 	</dependencies>
-	
+
 </project>

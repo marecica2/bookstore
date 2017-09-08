@@ -2,14 +2,14 @@ package org.bmsource.service;
 
 import java.util.Collection;
 
-import javax.ejb.Remote;
+import javax.ejb.Local;
 
 import org.bmsource.bookstore.model.entity.Book;
 import org.bmsource.bookstore.model.entity.Order;
 import org.bmsource.bookstore.model.entity.User;
 
-@Remote
-public interface BookstoreService {
+@Local
+public interface BookstoreServiceLocal {
 
 	/*
 	 * (non-Javadoc)

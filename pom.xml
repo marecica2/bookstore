@@ -53,14 +53,6 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>2.6</version>
-				<configuration>
-					<failOnMissingWebXml>false</failOnMissingWebXml>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
 
@@ -90,6 +82,13 @@
 			<dependency>
 				<groupId>org.bmsource</groupId>
 				<artifactId>bookstore-service</artifactId>
+				<type>ejb</type>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bmsource</groupId>
+				<artifactId>bookstore-service</artifactId>
+				<type>ejb-client</type>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>

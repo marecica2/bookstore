@@ -40,6 +40,7 @@ public class DataGeneratorServiceEjb {
 	@PostConstruct
 	public void init() {
 		generateData();
+		System.out.println("DATA GENERATED SUCCESSFULLY");
 	}
 
 	private List<User> generateUsers(int size, List<Role> roles) {

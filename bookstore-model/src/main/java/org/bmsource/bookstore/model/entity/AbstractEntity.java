@@ -1,5 +1,6 @@
 package org.bmsource.bookstore.model.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -13,7 +14,9 @@ import javax.persistence.TemporalType;
 import javax.persistence.Version;
 
 @MappedSuperclass
-public abstract class AbstractEntity {
+public abstract class AbstractEntity implements Serializable {
+
+	private static final long serialVersionUID = -3211695713650358871L;
 
 	@Id
 	@Column(name = "ID")

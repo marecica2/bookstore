@@ -11,8 +11,12 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.bmsource</groupId>
-			<artifactId>bookstore-rest</artifactId>
-			<type>war</type>
+			<artifactId>bookstore-model</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.bmsource</groupId>
+			<artifactId>bookstore-service</artifactId>
+			<type>ejb</type>
 		</dependency>
 	</dependencies>
 
@@ -23,12 +27,19 @@
 				<artifactId>maven-ear-plugin</artifactId>
 				<version>2.10.1</version>
 				<configuration>
+					<defaultLibBundleDir>lib</defaultLibBundleDir>
 					<modules>
-						<webModule>
+						<jarModule>
 							<groupId>org.bmsource</groupId>
-							<artifactId>bookstore-rest</artifactId>
-							<contextRoot>/bookstore</contextRoot>
-						</webModule>
+							<artifactId>bookstore-model</artifactId>
+							 <!-- Important -->
+							<includeInApplicationXml>true</includeInApplicationXml>
+							<bundleDir>/</bundleDir>
+						</jarModule>
+						<ejbModule>
+							<groupId>org.bmsource</groupId>
+							<artifactId>bookstore-service</artifactId>
+						</ejbModule>
 					</modules>
 				</configuration>
 			</plugin>

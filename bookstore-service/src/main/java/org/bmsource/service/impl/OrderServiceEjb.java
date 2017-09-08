@@ -15,7 +15,7 @@ import org.bmsource.service.OrderService;
 
 @Singleton
 @Transactional
-public class OrderServiceImpl implements OrderService {
+public class OrderServiceEjb implements OrderService {
 
 	@EJB
 	private BookDAO bookDAO;

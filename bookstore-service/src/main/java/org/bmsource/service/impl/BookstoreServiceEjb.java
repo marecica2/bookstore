@@ -14,10 +14,11 @@ import org.bmsource.dao.BookDAO;
 import org.bmsource.dao.OrderDAO;
 import org.bmsource.dao.UserDAO;
 import org.bmsource.service.BookstoreService;
+import org.bmsource.service.BookstoreServiceLocal;
 
 @Stateless
 @Transactional
-public class BookstoreServiceEjb implements BookstoreService {
+public class BookstoreServiceEjb implements BookstoreService, BookstoreServiceLocal {
 
 	@EJB
 	private BookDAO bookDAO;

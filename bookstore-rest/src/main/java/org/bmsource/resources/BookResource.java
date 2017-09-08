@@ -26,7 +26,7 @@ import org.bmsource.service.BookstoreService;
 @Transactional
 public class BookResource {
 
-	@EJB
+	@EJB(lookup = "java:global/bookstore-ear-0.0.1-SNAPSHOT/bookstore-service-0.0.1-SNAPSHOT/BookstoreServiceEjb!org.bmsource.service.BookstoreService")
 	private BookstoreService bss;
 
 	@GET

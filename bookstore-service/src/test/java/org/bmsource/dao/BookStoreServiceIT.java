@@ -38,6 +38,10 @@ public class BookStoreServiceIT {
 	@Test
 	public void testGetBooks() {
 		Collection<Book> books = bookstoreService.getBooks();
+		System.err.println("xxxxxxx");
+		System.err.println("xxxxxxx");
+		System.err.println("xxxxxxx");
+		System.err.println("xxxxxxx");
 		for (Book book : books) {
 			System.err.println(book);
 		}
