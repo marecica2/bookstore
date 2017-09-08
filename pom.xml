@@ -13,7 +13,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<version.org.jboss.arquillian>1.1.5.Final</version.org.jboss.arquillian>
 		<version.org.wildfly>8.1.0.Final</version.org.wildfly>
-
+		<wildfly.deployment.location>c:\Work\wildfly-10.1.0.Final\standalone\deployments\</wildfly.deployment.location>
 		<skipTests>false</skipTests>
 		<skipITs>true</skipITs>
 		<skipUTs>${skipTests}</skipUTs>
@@ -53,7 +53,45 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			
+			<!-- deployment to local wildfly by copying the built dependencies -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>3.0.1</version>
+				<executions>
+					<execution>
+						<id>copy</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy</goal>
+						</goals>
+						<configuration>
+							<artifactItems>
+								<artifactItem>
+									<groupId>org.bmsource</groupId>
+									<artifactId>bookstore-ear</artifactId>
+									<version>${project.version}</version>
+									<type>ear</type>
+									<overWrite>true</overWrite>
+									<outputDirectory>${wildfly.deployment.location}</outputDirectory>
+								</artifactItem>
+								<artifactItem>
+									<groupId>org.bmsource</groupId>
+									<artifactId>bookstore-rest</artifactId>
+									<version>${project.version}</version>
+									<type>war</type>
+									<overWrite>true</overWrite>
+									<outputDirectory>${wildfly.deployment.location}</outputDirectory>
+								</artifactItem>
+							</artifactItems>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>				
 		</plugins>
+		
+	
 	</build>
 
 	<dependencies>
@@ -164,5 +202,7 @@
 			</dependencies>
 		</profile>
 	</profiles>
+	
+	
 
 </project>

@@ -32,7 +32,7 @@
 						<jarModule>
 							<groupId>org.bmsource</groupId>
 							<artifactId>bookstore-model</artifactId>
-							 <!-- Important -->
+							<!-- Important -->
 							<includeInApplicationXml>true</includeInApplicationXml>
 							<bundleDir>/</bundleDir>
 						</jarModule>
