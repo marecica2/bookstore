@@ -17,9 +17,11 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
 import javax.ws.rs.core.UriInfo;
 
+import org.bmsource.application.RestResource;
 import org.bmsource.bookstore.model.entity.User;
 import org.bmsource.service.BookstoreService;
 
+@RestResource
 @Stateless
 @Path("customers")
 @Produces(MediaType.APPLICATION_JSON)

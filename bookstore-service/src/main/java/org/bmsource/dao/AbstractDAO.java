@@ -14,8 +14,6 @@ import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
-import org.bmsource.bookstore.model.entity.Order;
-
 @Stateless
 public class AbstractDAO<T> {
 
@@ -32,12 +30,12 @@ public class AbstractDAO<T> {
 		return entityManager.find(type, id);
 	}
 
-	public Order byId(Long id, String fetchGraph) {
+	public T byId(Long id, String fetchGraph) {
 		EntityGraph<?> graph = entityManager.getEntityGraph(fetchGraph);
 		Map<String, Object> hints = new HashMap<>();
 		hints.put("javax.persistence.fetchgraph", graph);
 
-		return entityManager.find(Order.class, id, hints);
+		return entityManager.find(type, id, hints);
 	}
 
 	public T create(T entity) {

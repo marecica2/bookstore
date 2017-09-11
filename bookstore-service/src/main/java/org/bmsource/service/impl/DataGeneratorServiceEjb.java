@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Random;
 
 import javax.annotation.PostConstruct;
+import javax.ejb.DependsOn;
 import javax.ejb.EJB;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
@@ -23,6 +24,7 @@ import org.bmsource.dao.UserDAO;
 
 @Singleton
 @Startup
+@DependsOn("AsyncEJB")
 public class DataGeneratorServiceEjb {
 
 	@EJB
@@ -39,6 +41,7 @@ public class DataGeneratorServiceEjb {
 
 	@PostConstruct
 	public void init() {
+		System.out.println("DATA GENERATION STARTED");
 		generateData();
 		System.out.println("DATA GENERATED SUCCESSFULLY");
 	}

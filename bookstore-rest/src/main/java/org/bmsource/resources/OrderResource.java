@@ -17,10 +17,12 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
 import javax.ws.rs.core.UriInfo;
 
+import org.bmsource.application.RestResource;
 import org.bmsource.bookstore.model.entity.Order;
 import org.bmsource.service.BookstoreService;
 import org.bmsource.service.OrderService;
 
+@RestResource
 @Stateless
 @Path("orders")
 @Produces(MediaType.APPLICATION_JSON)
