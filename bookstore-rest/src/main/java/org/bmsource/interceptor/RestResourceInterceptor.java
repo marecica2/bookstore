@@ -1,6 +1,5 @@
-package org.bmsource.application;
+package org.bmsource.interceptor;
 
-import javax.annotation.Priority;
 import javax.interceptor.AroundInvoke;
 import javax.interceptor.Interceptor;
 import javax.interceptor.InvocationContext;
@@ -9,7 +8,7 @@ import org.hibernate.LazyInitializationException;
 
 @RestResource
 @Interceptor
-@Priority(Interceptor.Priority.APPLICATION)
+// Optional: @Priority(Interceptor.Priority.APPLICATION)
 public class RestResourceInterceptor {
 
 	@AroundInvoke

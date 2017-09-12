@@ -1,4 +1,4 @@
-package org.bmsource.application;
+package org.bmsource.interceptor;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Inherited;

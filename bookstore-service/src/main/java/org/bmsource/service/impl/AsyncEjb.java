@@ -8,26 +8,37 @@ import javax.ejb.ConcurrencyManagement;
 import javax.ejb.ConcurrencyManagementType;
 import javax.ejb.Singleton;
 
+import org.bmsource.logging.Loggable;
+import org.bmsource.service.Async;
+
 @Singleton
+@Loggable
 @ConcurrencyManagement(ConcurrencyManagementType.CONTAINER)
-public class AsyncEJB {
+public class AsyncEjb implements Async {
+
+	@Override
 	@PostConstruct
 	public void init() {
 		System.out.println("ASYNC EJB STARTED");
 	}
 
+	@Override
 	@AccessTimeout(0)
 	public void doItNow() {
-		// do something
 	}
 
-	@AccessTimeout(value = 5, unit = TimeUnit.SECONDS)
+	@Override
+	@AccessTimeout(value = 7, unit = TimeUnit.SECONDS)
 	public void doItSoon() {
-		// do something
+		try {
+			Thread.sleep(TimeUnit.SECONDS.toMillis(4));
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 
+	@Override
 	@AccessTimeout(-1)
 	public void justDoIt() {
-		// do something
 	}
 }

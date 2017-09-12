@@ -17,8 +17,8 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
 import javax.ws.rs.core.UriInfo;
 
-import org.bmsource.application.RestResource;
 import org.bmsource.bookstore.model.entity.Book;
+import org.bmsource.interceptor.RestResource;
 import org.bmsource.service.BookstoreService;
 
 @RestResource
