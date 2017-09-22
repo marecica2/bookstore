@@ -105,6 +105,10 @@ public class Order extends AbstractEntity {
 		return orderProducts;
 	}
 
+	public void setOrderProducts(Set<OrderProduct> orderProducts) {
+		this.orderProducts = orderProducts;
+	}
+
 	@Override
 	public String toString() {
 		return "Order [status=" + status + ", id=" + id + "]";
