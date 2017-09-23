@@ -27,11 +27,14 @@
 				<artifactId>maven-ear-plugin</artifactId>
 				<version>2.10.1</version>
 				<configuration>
+					<version>6</version>
+					<applicationName>${project.artifactId}</applicationName>
 					<defaultLibBundleDir>lib</defaultLibBundleDir>
 					<modules>
 						<jarModule>
 							<groupId>org.bmsource</groupId>
 							<artifactId>bookstore-model</artifactId>
+							<bundleFileName>bookstore-model</bundleFileName>
 							<!-- Important -->
 							<includeInApplicationXml>true</includeInApplicationXml>
 							<bundleDir>/</bundleDir>
@@ -39,6 +42,7 @@
 						<ejbModule>
 							<groupId>org.bmsource</groupId>
 							<artifactId>bookstore-service</artifactId>
+							<bundleFileName>bookstore-service</bundleFileName>
 						</ejbModule>
 					</modules>
 				</configuration>

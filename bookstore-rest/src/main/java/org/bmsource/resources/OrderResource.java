@@ -29,10 +29,10 @@ import org.bmsource.service.OrderService;
 @Transactional
 public class OrderResource {
 
-	@EJB(lookup = "java:global/bookstore-ear-0.0.1-SNAPSHOT/bookstore-service-0.0.1-SNAPSHOT/BookstoreServiceEjb!org.bmsource.service.BookstoreService")
+	@EJB(lookup = "java:global/bookstore-ear/bookstore-service/BookstoreServiceEjb!org.bmsource.service.BookstoreService")
 	private BookstoreService bss;
 
-	@EJB(lookup = "java:global/bookstore-ear-0.0.1-SNAPSHOT/bookstore-service-0.0.1-SNAPSHOT/OrderServiceEjb!org.bmsource.service.OrderService")
+	@EJB(lookup = "java:global/bookstore-ear/bookstore-service/OrderServiceEjb!org.bmsource.service.OrderService")
 	private OrderService os;
 
 	@GET

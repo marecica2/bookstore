@@ -14,12 +14,12 @@ import org.bmsource.service.Async;
 
 @RestResource
 @Stateless
-@Path("async")
+@Path("test")
 @Produces(MediaType.APPLICATION_JSON)
 @Transactional
-public class AsyncResource {
+public class TestResource {
 
-	@EJB(lookup = "java:global/bookstore-ear-0.0.1-SNAPSHOT/bookstore-service-0.0.1-SNAPSHOT/AsyncEjb!org.bmsource.service.Async")
+	@EJB(lookup = "java:global/bookstore-ear/bookstore-service/AsyncEjb!org.bmsource.service.Async")
 	private Async async;
 
 	@GET
