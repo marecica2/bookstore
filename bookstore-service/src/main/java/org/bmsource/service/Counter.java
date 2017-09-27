@@ -10,4 +10,6 @@ public interface Counter {
 	public int increment();
 
 	public int reset();
+
+	public void remove();
 }

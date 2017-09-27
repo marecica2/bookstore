@@ -11,6 +11,7 @@ import javax.ws.rs.core.Response;
 
 import org.bmsource.interceptor.RestResource;
 import org.bmsource.service.Async;
+import org.bmsource.service.Counter;
 
 @RestResource
 @Stateless
@@ -21,6 +22,16 @@ public class TestResource {
 
 	@EJB(lookup = "java:global/bookstore-ear/bookstore-service/AsyncEjb!org.bmsource.service.Async")
 	private Async async;
+
+	@EJB(lookup = "java:global/bookstore-ear/bookstore-service/CounterEjb!org.bmsource.service.Counter")
+	private Counter counter;
+
+	@GET
+	@Path("counterIncrement")
+	public Response counterIncrement() {
+		counter.increment();
+		return Response.ok(counter.count()).build();
+	}
 
 	@GET
 	@Path("doNow")

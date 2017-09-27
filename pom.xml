@@ -24,6 +24,7 @@
 		<module>bookstore-service</module>
 		<module>bookstore-rest</module>
 		<module>bookstore-ear</module>
+		<module>bookstore-standalone-client</module>
 	</modules>
 
 	<build>

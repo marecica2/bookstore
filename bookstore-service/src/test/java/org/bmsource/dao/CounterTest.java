@@ -3,6 +3,7 @@ package org.bmsource.dao;
 import javax.naming.Context;
 
 import org.bmsource.service.Counter;
+import org.bmsource.service.CounterLocal;
 import org.bmsource.service.impl.CounterEjb;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
@@ -26,6 +27,7 @@ public class CounterTest extends TestCase {
 		return ShrinkWrap.create(JavaArchive.class)
 				.addClass(Counter.class)
 				.addClass(CounterEjb.class)
+				.addClass(CounterLocal.class)
 				.addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
 	}
 
