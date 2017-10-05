@@ -4,7 +4,8 @@ import java.util.Collection;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
-import javax.transaction.Transactional;
+import javax.ejb.TransactionManagement;
+import javax.ejb.TransactionManagementType;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -25,7 +26,7 @@ import org.bmsource.service.BookstoreService;
 @Stateless
 @Path("customers")
 @Produces(MediaType.APPLICATION_JSON)
-@Transactional
+@TransactionManagement(TransactionManagementType.CONTAINER)
 public class CustomerResource {
 
 	@EJB(lookup = "java:global/bookstore-ear/bookstore-service/BookstoreServiceEjb!org.bmsource.service.BookstoreService")
@@ -33,20 +34,20 @@ public class CustomerResource {
 
 	@GET
 	public Response getCustomers() {
-		Collection<User> customers = bss.getCustomers();
+		Collection<User> customers = bss.getUsers();
 		return Response.ok(customers).build();
 	}
 
 	@GET
 	@Path("/{id}")
 	public Response getCustomer(@PathParam("id") Long id) {
-		return Response.ok(bss.getCustomer(id)).build();
+		return Response.ok(bss.getUser(id)).build();
 	}
 
 	@POST
 	public Response createCustomer(User customer, @Context UriInfo uriInfo) {
 
-		customer = bss.createCustomer(customer);
+		customer = bss.createUser(customer);
 		UriBuilder builder = uriInfo.getAbsolutePathBuilder();
 		builder.path(Long.toString(customer.getId()));
 		return Response.created(builder.build()).build();
@@ -55,7 +56,7 @@ public class CustomerResource {
 	@PUT
 	@Path("/{id}")
 	public Response updateCustomer(User customer) {
-		bss.updateCustomer(customer);
+		bss.updateUser(customer);
 		return Response.ok(customer).build();
 	}
 

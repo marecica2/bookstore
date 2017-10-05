@@ -4,7 +4,8 @@ import java.util.Collection;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
-import javax.transaction.Transactional;
+import javax.ejb.TransactionManagement;
+import javax.ejb.TransactionManagementType;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -25,7 +26,7 @@ import org.bmsource.service.BookstoreService;
 @Stateless
 @Path("books")
 @Produces(MediaType.APPLICATION_JSON)
-@Transactional
+@TransactionManagement(TransactionManagementType.CONTAINER)
 public class BookResource {
 
 	@EJB(lookup = "java:global/bookstore-ear/bookstore-service/BookstoreServiceEjb!org.bmsource.service.BookstoreService")

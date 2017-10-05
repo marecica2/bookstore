@@ -14,6 +14,7 @@ import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.MapKeyColumn;
+import javax.persistence.NamedEntityGraph;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
@@ -22,7 +23,10 @@ import javax.persistence.Table;
 @Entity
 @SequenceGenerator(name = "default_gen", sequenceName = "seq_user")
 @Table(name = "USER")
+@NamedEntityGraph(name = "x1", attributeNodes = {})
 public class User extends AbstractEntity {
+
+	private static final long serialVersionUID = 3077576660823558691L;
 
 	@Column(name = "LOGIN", unique = true)
 	private String login;

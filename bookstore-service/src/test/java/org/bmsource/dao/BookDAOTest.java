@@ -1,5 +1,6 @@
 package org.bmsource.dao;
 
+import java.math.BigDecimal;
 import java.util.Collection;
 
 import javax.inject.Inject;
@@ -59,6 +60,7 @@ public class BookDAOTest extends AbstractDAOTest {
 		content.setContentType("text");
 
 		Book book = new Book();
+		book.setPrice(new BigDecimal(10.89));
 		book.setContent(content);
 		book.setIsbn("ISBN" + System.currentTimeMillis());
 		book.setDescription(testDescription);
@@ -69,7 +71,6 @@ public class BookDAOTest extends AbstractDAOTest {
 		bookDAO.create(book);
 		t2.commit();
 
-		System.out.println(book.getId());
 		Assert.assertTrue(book.getId() > 0);
 	}
 

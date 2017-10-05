@@ -15,6 +15,8 @@ import javax.persistence.Table;
 @SequenceGenerator(name = "default_gen", sequenceName = "seq_role")
 public class Role extends AbstractEntity {
 
+	private static final long serialVersionUID = -8725624612450556239L;
+
 	private String role;
 
 	@OneToMany(cascade = CascadeType.ALL)

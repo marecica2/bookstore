@@ -2,7 +2,8 @@ package org.bmsource.resources;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
-import javax.transaction.Transactional;
+import javax.ejb.TransactionManagement;
+import javax.ejb.TransactionManagementType;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -17,7 +18,7 @@ import org.bmsource.service.Counter;
 @Stateless
 @Path("test")
 @Produces(MediaType.APPLICATION_JSON)
-@Transactional
+@TransactionManagement(TransactionManagementType.CONTAINER)
 public class TestResource {
 
 	@EJB(lookup = "java:global/bookstore-ear/bookstore-service/AsyncEjb!org.bmsource.service.Async")

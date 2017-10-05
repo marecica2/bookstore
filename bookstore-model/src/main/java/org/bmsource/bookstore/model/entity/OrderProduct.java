@@ -1,5 +1,7 @@
 package org.bmsource.bookstore.model.entity;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Convert;
 import javax.persistence.EmbeddedId;
@@ -15,12 +17,13 @@ import org.bmsource.bookstore.model.util.ColorConverter;
 
 @Entity
 @Table(name = "ORDER_PRODUCT")
-public class OrderProduct {
+public class OrderProduct implements Serializable {
+
+	private static final long serialVersionUID = 3035429922475077627L;
 
 	private Integer quantity = 1;
 
 	@Column(name = "COLOR")
-
 	@Convert(converter = ColorConverter.class)
 	private Color color;
 

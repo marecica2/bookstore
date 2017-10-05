@@ -1,10 +1,9 @@
-package org.bmsource.dao;
+package org.bmsource.service.impl;
 
 import javax.naming.Context;
 
 import org.bmsource.service.Counter;
 import org.bmsource.service.CounterLocal;
-import org.bmsource.service.impl.CounterEjb;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.arquillian.test.api.ArquillianResource;
@@ -55,6 +54,8 @@ public class CounterTest extends TestCase {
 
 		// The new bean instance starts out at 0
 		assertEquals(0, counterB.count());
+		counterA.remove();
+		counterB.remove();
 	}
 
 }

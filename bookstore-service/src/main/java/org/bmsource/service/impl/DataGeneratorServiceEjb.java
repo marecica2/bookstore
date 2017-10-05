@@ -1,5 +1,6 @@
 package org.bmsource.service.impl;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -94,6 +95,7 @@ public class DataGeneratorServiceEjb {
 		Random randomGenerator = new Random();
 		for (int i = 0; i < size; i++) {
 			Book book = new Book();
+			book.setPrice(new BigDecimal(randomGenerator.nextInt(12) + 3));
 			book.setIsbn("ISBN" + System.currentTimeMillis());
 			book.setName(titles[randomGenerator.nextInt(titles.length)]);
 			book.setDescription(titles[randomGenerator.nextInt(titles.length)]);

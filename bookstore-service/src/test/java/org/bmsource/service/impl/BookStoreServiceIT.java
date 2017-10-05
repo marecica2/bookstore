@@ -1,12 +1,13 @@
-package org.bmsource.dao;
+package org.bmsource.service.impl;
 
 import java.util.Collection;
 
 import javax.ejb.EJB;
 
 import org.bmsource.bookstore.model.entity.Book;
+import org.bmsource.bookstore.model.entity.Order;
+import org.bmsource.service.BookstoreException;
 import org.bmsource.service.BookstoreService;
-import org.bmsource.service.impl.BookstoreServiceEjb;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
@@ -38,13 +39,12 @@ public class BookStoreServiceIT {
 	@Test
 	public void testGetBooks() {
 		Collection<Book> books = bookstoreService.getBooks();
-		System.err.println("xxxxxxx");
-		System.err.println("xxxxxxx");
-		System.err.println("xxxxxxx");
-		System.err.println("xxxxxxx");
-		for (Book book : books) {
-			System.err.println(book);
-		}
 		Assert.assertTrue(books.size() > 0);
+	}
+
+	@Test
+	public void testPlaceOrder() throws BookstoreException {
+		Order order = bookstoreService.getOrder(1L);
+		bookstoreService.submitOrder(order, true);
 	}
 }

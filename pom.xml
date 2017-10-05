@@ -25,6 +25,7 @@
 		<module>bookstore-rest</module>
 		<module>bookstore-ear</module>
 		<module>bookstore-standalone-client</module>
+		<module>bookstore-accounting</module>
 	</modules>
 
 	<build>
@@ -65,6 +66,23 @@
 			<version>7.0</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		<!-- logging -->
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-api</artifactId>
+		    <version>1.7.7</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.slf4j</groupId>
+		    <artifactId>slf4j-log4j12</artifactId>
+		    <version>1.7.7</version>
+		</dependency>		
+		<dependency>
+		    <groupId>log4j</groupId>
+		    <artifactId>log4j</artifactId>
+		    <version>1.2.16</version>
+		</dependency>			
 
 		<!-- Integration tests -->
 		<dependency>
@@ -97,6 +115,12 @@
 				<groupId>org.bmsource</groupId>
 				<artifactId>bookstore-rest</artifactId>
 				<type>war</type>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bmsource</groupId>
+				<artifactId>bookstore-accounting</artifactId>
+				<type>ejb</type>
 				<version>${project.version}</version>
 			</dependency>
 

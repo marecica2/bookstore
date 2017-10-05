@@ -36,7 +36,11 @@
 			<artifactId>bookstore-service</artifactId>
 			<type>ejb-client</type>
 		</dependency>
-		
+		<dependency>
+		  <groupId>org.modelmapper</groupId>
+		  <artifactId>modelmapper</artifactId>
+		  <version>1.1.0</version>
+		</dependency>		
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>

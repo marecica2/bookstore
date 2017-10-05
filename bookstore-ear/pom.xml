@@ -18,6 +18,11 @@
 			<artifactId>bookstore-service</artifactId>
 			<type>ejb</type>
 		</dependency>
+		<dependency>
+			<groupId>org.bmsource</groupId>
+			<artifactId>bookstore-accounting</artifactId>
+			<type>ejb</type>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -44,6 +49,11 @@
 							<groupId>org.bmsource</groupId>
 							<artifactId>bookstore-service</artifactId>
 							<bundleFileName>bookstore-service.jar</bundleFileName>
+						</ejbModule>
+						<ejbModule>
+							<groupId>org.bmsource</groupId>
+							<artifactId>bookstore-accounting</artifactId>
+							<bundleFileName>bookstore-accounting.jar</bundleFileName>
 						</ejbModule>
 					</modules>
 				</configuration>

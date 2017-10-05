@@ -12,6 +12,8 @@ import javax.persistence.Table;
 @Table(name = "CONTENT")
 public class Content extends AbstractEntity {
 
+	private static final long serialVersionUID = 5889388362380911466L;
+
 	@Column(name = "CONTENT_TYPE")
 	private String contentType;
 

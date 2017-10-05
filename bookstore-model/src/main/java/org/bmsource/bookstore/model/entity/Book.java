@@ -21,6 +21,8 @@ import javax.validation.constraints.NotNull;
 @NamedEntityGraph(name = Book.FULL, attributeNodes = { @NamedAttributeNode("authors"), @NamedAttributeNode("content") })
 public class Book extends Product {
 
+	private static final long serialVersionUID = -4647005664336194152L;
+
 	public static final String FULL = "Book.full";
 
 	@NotNull

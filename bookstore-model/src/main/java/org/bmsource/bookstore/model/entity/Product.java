@@ -1,5 +1,7 @@
 package org.bmsource.bookstore.model.entity;
 
+import java.math.BigDecimal;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.DiscriminatorColumn;
@@ -21,6 +23,8 @@ import javax.validation.constraints.NotNull;
 @Table(name = "PRODUCT")
 public class Product extends AbstractEntity {
 
+	private static final long serialVersionUID = 1083476485884155098L;
+
 	@NotNull
 	@Column(name = "NAME")
 	private String name;
@@ -32,6 +36,16 @@ public class Product extends AbstractEntity {
 	@OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
 	@JoinColumn(name = "CONTENT_ID")
 	private Content content;
+
+	private BigDecimal price;
+
+	public BigDecimal getPrice() {
+		return price;
+	}
+
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
 
 	public Content getContent() {
 		return content;

@@ -1,25 +1,30 @@
 package org.bmsource.service.impl;
 
+import java.math.BigDecimal;
 import java.util.Collection;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
-import javax.transaction.Transactional;
+import javax.ejb.TransactionAttribute;
+import javax.ejb.TransactionAttributeType;
 
 import org.bmsource.bookstore.model.entity.Book;
 import org.bmsource.bookstore.model.entity.Order;
+import org.bmsource.bookstore.model.entity.Order.Status;
 import org.bmsource.bookstore.model.entity.User;
 import org.bmsource.dao.AuthorDAO;
 import org.bmsource.dao.BookDAO;
 import org.bmsource.dao.OrderDAO;
 import org.bmsource.dao.UserDAO;
 import org.bmsource.logging.Loggable;
+import org.bmsource.service.BookstoreException;
 import org.bmsource.service.BookstoreService;
 import org.bmsource.service.BookstoreServiceLocal;
+import org.bmsource.service.CreditCardPayment;
 
 @Loggable
 @Stateless
-@Transactional
+@TransactionAttribute(TransactionAttributeType.REQUIRED)
 public class BookstoreServiceEjb implements BookstoreService, BookstoreServiceLocal {
 
 	@EJB
@@ -29,10 +34,16 @@ public class BookstoreServiceEjb implements BookstoreService, BookstoreServiceLo
 	private AuthorDAO authorDAO;
 
 	@EJB
-	private UserDAO customerDAO;
+	private UserDAO userDAO;
 
 	@EJB
 	private OrderDAO orderDAO;
+
+	@EJB
+	private InvoiceProducer invoiceProducer;
+
+	@EJB
+	private CreditCardPayment creditCardPayment;
 
 	@Override
 	public Collection<Book> getBooks() {
@@ -59,25 +70,25 @@ public class BookstoreServiceEjb implements BookstoreService, BookstoreServiceLo
 	}
 
 	@Override
-	public Collection<User> getCustomers() {
-		Collection<User> customers = customerDAO.findAll();
+	public Collection<User> getUsers() {
+		Collection<User> customers = userDAO.findAll();
 		return customers;
 	}
 
 	@Override
-	public User getCustomer(Long id) {
-		User customer = customerDAO.byId(id);
+	public User getUser(Long id) {
+		User customer = userDAO.byId(id);
 		return customer;
 	}
 
 	@Override
-	public User createCustomer(User customer) {
-		return customerDAO.create(customer);
+	public User createUser(User user) {
+		return userDAO.create(user);
 	}
 
 	@Override
-	public User updateCustomer(User customer) {
-		return customerDAO.update(customer);
+	public User updateUser(User user) {
+		return userDAO.update(user);
 	}
 
 	@Override
@@ -88,17 +99,32 @@ public class BookstoreServiceEjb implements BookstoreService, BookstoreServiceLo
 
 	@Override
 	public Order getOrder(Long id) {
-		Order customer = orderDAO.byId(id);
-		return customer;
+		Order order = orderDAO.byId(id, Order.ALL);
+		return order;
 	}
 
 	@Override
-	public Order createOrder(Order customer) {
-		return orderDAO.create(customer);
+	public Order createOrder(Order order) {
+		return orderDAO.create(order);
 	}
 
 	@Override
-	public Order updateOrder(Order customer) {
-		return orderDAO.update(customer);
+	public Order updateOrder(Order order) {
+		return orderDAO.update(order);
 	}
+
+	@Override
+	public Order submitOrder(Order order, boolean rollback) throws BookstoreException {
+		order = orderDAO.getEntityManager().merge(order);
+
+		BigDecimal total = new BigDecimal(0);
+		order.getOrderProducts().forEach(o -> total.add(BigDecimal.valueOf(o.getProduct().getId())));
+		order.setStatus(Status.PAID);
+		order.setLastModifiedDate();
+		orderDAO.update(order);
+		invoiceProducer.sendInvoice("DE0001" + order.getUser().getLogin() + "123 " + total + " USD");
+		creditCardPayment.charge("DE0001" + order.getUser().getLogin() + "123", total, rollback);
+		return order;
+	}
+
 }

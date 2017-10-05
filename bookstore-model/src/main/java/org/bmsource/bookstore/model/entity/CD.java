@@ -9,4 +9,6 @@ import javax.persistence.Table;
 @Table(name = "PRODUCT_CD")
 public class CD extends Product {
 
+	private static final long serialVersionUID = -3101319839346977765L;
+
 }

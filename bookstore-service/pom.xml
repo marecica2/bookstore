@@ -43,6 +43,12 @@
 			<artifactId>hibernate-entitymanager</artifactId>
 			<version>${hibernate.version}</version>
 			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.apache.geronimo.specs</groupId>
+					<artifactId>geronimo-jta_1.1_spec</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 			
 		<!-- 
@@ -82,5 +88,7 @@
 			<version>1.1.0.Final</version>
 			<scope>test</scope>
 		</dependency>
+		
+		
 	</dependencies>
 </project>

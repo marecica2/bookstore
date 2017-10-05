@@ -14,6 +14,8 @@ import javax.persistence.Table;
 @Table(name = "AUTHOR")
 public class Author extends AbstractEntity {
 
+	private static final long serialVersionUID = -609991998017656201L;
+
 	@Column(name = "FIRST_NAME")
 	private String firstName;
 

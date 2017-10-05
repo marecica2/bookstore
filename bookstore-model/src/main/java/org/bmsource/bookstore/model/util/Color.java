@@ -1,6 +1,11 @@
 package org.bmsource.bookstore.model.util;
 
-public class Color {
+import java.io.Serializable;
+
+public class Color implements Serializable {
+
+	private static final long serialVersionUID = 5548802073524348692L;
+
 	private int r = 0;
 	private int g = 0;
 	private int b = 0;

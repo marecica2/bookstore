@@ -42,7 +42,7 @@ public abstract class AbstractEntity implements Serializable {
 	}
 
 	@PreUpdate
-	private void setLastModifiedDate() {
+	public void setLastModifiedDate() {
 		this.lastModifiedDate = new Date();
 	}
 

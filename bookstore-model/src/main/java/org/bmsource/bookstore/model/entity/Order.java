@@ -37,7 +37,6 @@ import javax.persistence.Table;
 				@NamedSubgraph(name = "xxx", attributeNodes = @NamedAttributeNode("product")) }),
 		@NamedEntityGraph(name = Order.ALL, includeAllAttributes = true),
 })
-
 @NamedNativeQueries({
 		@NamedNativeQuery(name = Order.NAMED_QUERY, query = "select op.product_id as productId, o.user_id as userId, o.version as version, o.createdDate as createdDate, o.lastModifiedDate as lastModifiedDate, o.id as orderId, o.status as orderStatus from bookstore.`ORDER` o LEFT OUTER JOIN bookstore.ORDER_PRODUCT op on op.ORDER_ID = o.ID", resultSetMapping = Order.SQL_RESULT_SET_MAPPING_BASIC) })
 
@@ -60,6 +59,8 @@ import javax.persistence.Table;
 		)
 })
 public class Order extends AbstractEntity {
+
+	private static final long serialVersionUID = -242469463809682959L;
 
 	public static final String SQL_RESULT_SET_MAPPING_BASIC = "basic";
 	public static final String PRODUCTS = "graph.order.products";

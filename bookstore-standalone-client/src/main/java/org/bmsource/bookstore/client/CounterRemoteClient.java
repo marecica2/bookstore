@@ -47,6 +47,7 @@ public class CounterRemoteClient {
 					try {
 						Counter counter = createEjbProxy(remotingContext, ejbUrl, Counter.class);
 						counter.increment();
+						Thread.sleep(4000);
 						System.err.println(counter.count());
 						counter.increment();
 						System.err.println(counter.count());
