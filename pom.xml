@@ -45,7 +45,7 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
-		
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -66,23 +66,31 @@
 			<version>7.0</version>
 			<scope>provided</scope>
 		</dependency>
-		
+
 		<!-- logging -->
 		<dependency>
-		    <groupId>org.slf4j</groupId>
-		    <artifactId>slf4j-api</artifactId>
-		    <version>1.7.7</version>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.7</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.slf4j</groupId>
-		    <artifactId>slf4j-log4j12</artifactId>
-		    <version>1.7.7</version>
-		</dependency>		
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.7</version>
+		</dependency>
 		<dependency>
-		    <groupId>log4j</groupId>
-		    <artifactId>log4j</artifactId>
-		    <version>1.2.16</version>
-		</dependency>			
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.16</version>
+		</dependency>
+
+		<!-- Json -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.7.4</version>
+			<scope>provided</scope>
+		</dependency>
 
 		<!-- Integration tests -->
 		<dependency>
@@ -189,7 +197,7 @@
 				</dependency>
 			</dependencies>
 		</profile>
-		
+
 		<profile>
 			<id>local-wildfly-deploy</id>
 			<activation>
@@ -234,7 +242,7 @@
 			</build>
 		</profile>
 	</profiles>
-	
-	
+
+
 
 </project>

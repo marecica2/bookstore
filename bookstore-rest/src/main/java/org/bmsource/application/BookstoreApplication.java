@@ -22,6 +22,7 @@ public class BookstoreApplication extends Application {
 		classes.add(OrderResource.class);
 		classes.add(TestResource.class);
 		classes.add(BookstoreExceptionMapper.class);
+		classes.add(JacksonObjectMapperProvider.class);
 		return classes;
 	}
 }

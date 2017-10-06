@@ -20,6 +20,8 @@ import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 @Entity
 @SequenceGenerator(name = "default_gen", sequenceName = "seq_user")
 @Table(name = "USER")
@@ -37,6 +39,7 @@ public class User extends AbstractEntity {
 	@Column(name = "LAST_NAME")
 	private String lastName;
 
+	@JsonBackReference
 	@OneToMany(targetEntity = Order.class, cascade = CascadeType.ALL, mappedBy = "user")
 	private Set<Order> orders = new HashSet<>();
 

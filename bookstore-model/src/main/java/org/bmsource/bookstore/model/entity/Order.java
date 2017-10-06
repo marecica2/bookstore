@@ -27,6 +27,8 @@ import javax.persistence.SqlResultSetMapping;
 import javax.persistence.SqlResultSetMappings;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 @Entity
 @Table(name = "\"ORDER\"")
 @SequenceGenerator(name = "default_gen", sequenceName = "seq_order")
@@ -77,6 +79,7 @@ public class Order extends AbstractEntity {
 	@Column(name = "STATUS", length = 32)
 	private Status status = Status.NEW;
 
+	@JsonManagedReference
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "USER_ID", nullable = false)
 	private User user;

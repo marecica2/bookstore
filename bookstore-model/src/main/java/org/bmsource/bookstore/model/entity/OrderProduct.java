@@ -15,6 +15,8 @@ import javax.persistence.Table;
 import org.bmsource.bookstore.model.util.Color;
 import org.bmsource.bookstore.model.util.ColorConverter;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "ORDER_PRODUCT")
 public class OrderProduct implements Serializable {
@@ -30,12 +32,13 @@ public class OrderProduct implements Serializable {
 	@EmbeddedId
 	private Pk id;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "PRODUCT_ID", referencedColumnName = "ID")
 	@MapsId("productId")
 	private Product product;
 
-	@ManyToOne(fetch = FetchType.LAZY)
+	@JsonIgnore
+	@ManyToOne
 	@MapsId("orderId")
 	@JoinColumn(name = "ORDER_ID", referencedColumnName = "ID")
 	private Order order;
