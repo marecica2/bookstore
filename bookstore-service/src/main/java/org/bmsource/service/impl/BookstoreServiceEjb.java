@@ -40,7 +40,10 @@ public class BookstoreServiceEjb implements BookstoreService, BookstoreServiceLo
 	private OrderDAO orderDAO;
 
 	@EJB
-	private InvoiceProducer invoiceProducer;
+	private InvoiceProducerEjb invoiceProducer;
+
+	@EJB
+	private EventProducerEjb eventProducer;
 
 	@EJB
 	private CreditCardPayment creditCardPayment;
@@ -122,7 +125,9 @@ public class BookstoreServiceEjb implements BookstoreService, BookstoreServiceLo
 		order.setStatus(Status.PAID);
 		order.setLastModifiedDate();
 		orderDAO.update(order);
-		invoiceProducer.sendInvoice("DE0001" + order.getUser().getLogin() + "123 " + total + " USD");
+		invoiceProducer.sendInvoice(
+				"DE0001" + order.getUser().getLogin() + "123 " + total + " USD " + order.getLastModifiedDate());
+		eventProducer.createEvent("Invoice was created on " + order.getLastModifiedDate());
 		creditCardPayment.charge("DE0001" + order.getUser().getLogin() + "123", total, rollback);
 		return order;
 	}

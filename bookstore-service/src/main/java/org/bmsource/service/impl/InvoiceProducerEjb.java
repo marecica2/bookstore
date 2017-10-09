@@ -11,7 +11,6 @@ import javax.jms.Destination;
 import javax.jms.JMSException;
 import javax.jms.MessageProducer;
 import javax.jms.QueueConnection;
-import javax.jms.QueueSession;
 import javax.jms.Session;
 import javax.jms.TextMessage;
 
@@ -21,24 +20,24 @@ import org.slf4j.LoggerFactory;
 @Stateless
 @TransactionManagement(TransactionManagementType.CONTAINER)
 @TransactionAttribute(TransactionAttributeType.MANDATORY)
-public class InvoiceProducer {
+public class InvoiceProducerEjb {
 
-	private static final Logger logger = LoggerFactory.getLogger(InvoiceProducer.class);
+	private static final Logger logger = LoggerFactory.getLogger(InvoiceProducerEjb.class);
 
 	@Resource(lookup = "java:/myJmsTest/MyConnectionFactory")
 	ConnectionFactory connectionFactory;
 
 	@Resource(lookup = "java:/myJmsTest/MyQueue")
-	Destination destination;
+	Destination queueDestination;
 
 	public void sendInvoice(String payment) {
 
 		try (QueueConnection connection = (QueueConnection) connectionFactory.createConnection();
-				QueueSession session = connection.createQueueSession(true, Session.AUTO_ACKNOWLEDGE);
-				MessageProducer producer = session.createProducer(destination)) {
-
+				Session session = connection.createSession(true, Session.SESSION_TRANSACTED);
+				MessageProducer producer = session.createProducer(queueDestination)) {
 			TextMessage message = session.createTextMessage(payment);
 			producer.send(message);
+			session.commit();
 		} catch (JMSException e) {
 			e.printStackTrace();
 			logger.error(e.getMessage(), e);

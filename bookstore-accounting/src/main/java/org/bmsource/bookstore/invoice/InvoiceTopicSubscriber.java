@@ -11,17 +11,17 @@ import javax.jms.MessageListener;
 import javax.jms.TextMessage;
 
 @MessageDriven(activationConfig = {
-		@ActivationConfigProperty(propertyName = "destination", propertyValue = "java:/myJmsTest/MyQueue") })
+		@ActivationConfigProperty(propertyName = "destination", propertyValue = "java:/myJmsTest/MyTopic") })
 @TransactionManagement(TransactionManagementType.CONTAINER)
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
-public class InvoiceConsumer implements MessageListener {
+public class InvoiceTopicSubscriber implements MessageListener {
 
 	@Override
 	public void onMessage(Message message) {
 		if (message instanceof TextMessage) {
 			TextMessage textMessage = (TextMessage) message;
 			try {
-				System.out.println(String.format("A message was found! ^__^ It is: '%s'", textMessage.getText()));
+				System.out.println(String.format(this.getClass().getName() + "topic event  %s", textMessage.getText()));
 			} catch (Exception ex) {
 				ex.printStackTrace(System.err);
 			}
