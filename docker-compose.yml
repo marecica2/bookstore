@@ -1,0 +1,28 @@
+version: '3'
+services:
+  activemq:
+    image: njmittet/alpine-activemq:5.14.0
+    environment:
+      ARTEMIS_MIN_MEMORY: 128M
+      ARTEMIS_MAX_MEMORY: 512M
+    ports:
+    - "8161:8161"
+    - "61616:61616"
+    - "5672:5672"
+  h2-db:
+    image: marecica2/alpine-h2
+    ports:
+    - "8082:8082" 
+    - "9092:9092"
+  bookstore-service:
+    build:
+      context: .
+      dockerfile: bookstore-service.dockerfile
+    ports:
+    - "8080:8080"
+    - "9990:9990"
+    links:
+    - h2-db
+    - activemq
+    volumes:
+    - c:/Users/Marek/docker/wildfly-deployments/:/opt/jboss/wildfly/standalone/deployments/:rw # directory must be located inside c:/users/  (write rights)

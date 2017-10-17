@@ -13,7 +13,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<version.org.jboss.arquillian>1.1.5.Final</version.org.jboss.arquillian>
 		<version.org.wildfly>8.1.0.Final</version.org.wildfly>
-		<wildfly.deployment.location>c:\Work\wildfly-10.1.0.Final\standalone\deployments\</wildfly.deployment.location>
+		<wildfly.deployment.location>c:\Users\Marek\docker\wildfly-deployments\</wildfly.deployment.location>
 		<skipTests>false</skipTests>
 		<skipITs>true</skipITs>
 		<skipUTs>${skipTests}</skipUTs>

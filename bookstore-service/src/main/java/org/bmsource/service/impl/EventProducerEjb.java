@@ -24,10 +24,10 @@ public class EventProducerEjb {
 
 	private static final Logger logger = LoggerFactory.getLogger(EventProducerEjb.class);
 
-	@Resource(lookup = "java:/myJmsTest/MyConnectionFactory")
+	@Resource(lookup = "java:/jms/ConnectionFactory")
 	ConnectionFactory connectionFactory;
 
-	@Resource(lookup = "java:/myJmsTest/MyTopic")
+	@Resource(lookup = "java:/jms/BookstoreTopic")
 	Destination topicDestination;
 
 	public void createEvent(String payment) {
@@ -37,7 +37,6 @@ public class EventProducerEjb {
 				MessageProducer producer = session.createProducer(topicDestination)) {
 			TextMessage message = session.createTextMessage(payment);
 			producer.send(message);
-			session.commit();
 		} catch (JMSException e) {
 			e.printStackTrace();
 			logger.error(e.getMessage(), e);

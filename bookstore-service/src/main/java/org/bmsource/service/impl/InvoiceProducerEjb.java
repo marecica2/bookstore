@@ -24,10 +24,10 @@ public class InvoiceProducerEjb {
 
 	private static final Logger logger = LoggerFactory.getLogger(InvoiceProducerEjb.class);
 
-	@Resource(lookup = "java:/myJmsTest/MyConnectionFactory")
+	@Resource(lookup = "java:/jms/ConnectionFactory")
 	ConnectionFactory connectionFactory;
 
-	@Resource(lookup = "java:/myJmsTest/MyQueue")
+	@Resource(lookup = "java:/jms/BookstoreQueue")
 	Destination queueDestination;
 
 	public void sendInvoice(String payment) {
@@ -37,7 +37,6 @@ public class InvoiceProducerEjb {
 				MessageProducer producer = session.createProducer(queueDestination)) {
 			TextMessage message = session.createTextMessage(payment);
 			producer.send(message);
-			session.commit();
 		} catch (JMSException e) {
 			e.printStackTrace();
 			logger.error(e.getMessage(), e);
