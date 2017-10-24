@@ -1,0 +1,1289 @@
+2017-10-17 19:50:04 INFO  org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: bookstoreTestDS
+	...]
+2017-10-17 19:50:04 INFO  org.hibernate.Version: HHH000412: Hibernate Core {5.0.10.Final}
+2017-10-17 19:50:04 INFO  org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-10-17 19:50:04 INFO  org.hibernate.cfg.Environment: HHH000021: Bytecode provider name : javassist
+2017-10-17 19:50:04 INFO  org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration boolean -> org.hibernate.type.BooleanType@be64738
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration boolean -> org.hibernate.type.BooleanType@be64738
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@be64738
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@4b5d6a01
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration true_false -> org.hibernate.type.TrueFalseType@3e2e18f2
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration yes_no -> org.hibernate.type.YesNoType@703580bf
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration byte -> org.hibernate.type.ByteType@5bd03f44
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration byte -> org.hibernate.type.ByteType@5bd03f44
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@5bd03f44
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration character -> org.hibernate.type.CharacterType@e056f20
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration char -> org.hibernate.type.CharacterType@e056f20
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@e056f20
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration short -> org.hibernate.type.ShortType@9225652
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration short -> org.hibernate.type.ShortType@9225652
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Short -> org.hibernate.type.ShortType@9225652
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration integer -> org.hibernate.type.IntegerType@63355449
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration int -> org.hibernate.type.IntegerType@63355449
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@63355449
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration long -> org.hibernate.type.LongType@30ee2816
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration long -> org.hibernate.type.LongType@30ee2816
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Long -> org.hibernate.type.LongType@30ee2816
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration float -> org.hibernate.type.FloatType@636be97c
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration float -> org.hibernate.type.FloatType@636be97c
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Float -> org.hibernate.type.FloatType@636be97c
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration double -> org.hibernate.type.DoubleType@3911c2a7
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration double -> org.hibernate.type.DoubleType@3911c2a7
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@3911c2a7
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@2145b572
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@2145b572
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration big_integer -> org.hibernate.type.BigIntegerType@1cbbffcd
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@1cbbffcd
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration string -> org.hibernate.type.StringType@28eaa59a
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.String -> org.hibernate.type.StringType@28eaa59a
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration nstring -> org.hibernate.type.StringNVarcharType@35ef1869
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@708f5957
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration url -> org.hibernate.type.UrlType@291ae
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.net.URL -> org.hibernate.type.UrlType@291ae
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration date -> org.hibernate.type.DateType@7193666c
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.sql.Date -> org.hibernate.type.DateType@7193666c
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration time -> org.hibernate.type.TimeType@56620197
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.sql.Time -> org.hibernate.type.TimeType@56620197
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration timestamp -> org.hibernate.type.TimestampType@6973b51b
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@6973b51b
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.util.Date -> org.hibernate.type.TimestampType@6973b51b
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@333291e3
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration calendar -> org.hibernate.type.CalendarType@402bba4f
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@402bba4f
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@402bba4f
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@f5ac9e4
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration locale -> org.hibernate.type.LocaleType@441772e
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@441772e
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration currency -> org.hibernate.type.CurrencyType@14dd9eb7
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@14dd9eb7
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration timezone -> org.hibernate.type.TimeZoneType@7fa98a66
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@7fa98a66
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration class -> org.hibernate.type.ClassType@32eff876
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Class -> org.hibernate.type.ClassType@32eff876
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@7c729a55
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@7c729a55
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5af3afd9
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration binary -> org.hibernate.type.BinaryType@4567f35d
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration byte[] -> org.hibernate.type.BinaryType@4567f35d
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration [B -> org.hibernate.type.BinaryType@4567f35d
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1fa268de
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1fa268de
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1fa268de
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration row_version -> org.hibernate.type.RowVersionType@3e58a80e
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration image -> org.hibernate.type.ImageType@4a94ee4
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration characters -> org.hibernate.type.CharArrayType@9f116cc
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration char[] -> org.hibernate.type.CharArrayType@9f116cc
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration [C -> org.hibernate.type.CharArrayType@9f116cc
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@7ec7ffd3
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@7ec7ffd3
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@7ec7ffd3
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration text -> org.hibernate.type.TextType@6d763516
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration ntext -> org.hibernate.type.NTextType@245b4bdc
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration blob -> org.hibernate.type.BlobType@74fe5c40
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@74fe5c40
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@131774fe
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration clob -> org.hibernate.type.ClobType@2f9f7dcf
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@2f9f7dcf
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration nclob -> org.hibernate.type.NClobType@2a3b5b47
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@2a3b5b47
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@689604d9
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@4c371370
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration serializable -> org.hibernate.type.SerializableType@2a65fe7c
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration object -> org.hibernate.type.ObjectType@692f203f
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@692f203f
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@a1153bc
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@1aafa419
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@47eaca72
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@55141def
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@55182842
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@3270d194
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@235834f2
+2017-10-17 19:50:05 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@5656be13
+2017-10-17 19:50:05 WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-10-17 19:50:05 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test]
+2017-10-17 19:50:05 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH10001001: Connection properties: {}
+2017-10-17 19:50:05 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH10001003: Autocommit mode: false
+2017-10-17 19:50:05 INFO  org.hibernate.engine.jdbc.connections.internal.PooledConnections: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-17 19:50:05 INFO  org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-17 19:50:05 WARN  org.hibernate.cfg.AnnotationBinder: HHH000457: Joined inheritance hierarchy [org.bmsource.bookstore.model.entity.Product] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2017-10-17 19:50:06 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterTypeAdapter: Created AttributeConverterTypeAdapter -> converted::org.bmsource.bookstore.model.util.ColorConverter
+2017-10-17 19:50:06 TRACE org.hibernate.type.TypeFactory$TypeScopeImpl: Scoping types to session factory org.hibernate.internal.SessionFactoryImpl@57ac5227
+2017-10-17 19:50:06 INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate: HHH000228: Running hbm2ddl schema update
+2017-10-17 19:50:06 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: `ORDER`
+2017-10-17 19:50:06 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: AUTHOR
+2017-10-17 19:50:06 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: BOOK_AUTHOR
+2017-10-17 19:50:06 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: CONTENT
+2017-10-17 19:50:06 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: ORDER_PRODUCT
+2017-10-17 19:50:06 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: PRODUCT
+2017-10-17 19:50:06 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: PRODUCT_BOOK
+2017-10-17 19:50:06 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: ROLE
+2017-10-17 19:50:06 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: USER
+2017-10-17 19:50:06 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: USER_ROLE
+2017-10-17 19:50:06 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: user_roles
+2017-10-17 19:50:06 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: USER_SETTINGS
+2017-10-17 19:50:06 INFO  org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-17 19:50:06 WARN  org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator$GenerationProcess: Hibernate hbm2ddl-auto setting was specified [update] in combination with JPA schema-generation; combination will likely cause trouble
+2017-10-17 19:50:07 INFO  org.jboss.weld.bootstrap.WeldStartup: WELD-000900: 2.4.2 (SP1)
+2017-10-17 19:50:07 INFO  org.jboss.weld.bootstrap.WeldStartup: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2017-10-17 19:50:07 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002003: Weld SE container 184439e5-9f6b-49a0-a8a3-f3f1d8c2ef1f initialized
+2017-10-17 19:50:07 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [1]
+2017-10-17 19:50:07 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:07 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:07 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_0_] : [BIGINT]) - [0]
+2017-10-17 19:50:07 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_0_] : [BIGINT]) - [2]
+2017-10-17 19:50:07 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_0_] : [VARCHAR]) - [I Capture The Castle]
+2017-10-17 19:50:07 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_0_] : [VARCHAR]) - [As I Lay Dying]
+2017-10-17 19:50:07 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_0_] : [NUMERIC]) - [8.99]
+2017-10-17 19:50:07 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_0_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:07 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#1]
+2017-10-17 19:50:07 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002001: Weld SE container 184439e5-9f6b-49a0-a8a3-f3f1d8c2ef1f shut down
+2017-10-17 19:50:07 INFO  org.jboss.weld.bootstrap.WeldStartup: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2017-10-17 19:50:07 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002003: Weld SE container 81c7339b-e6f1-4756-988a-181e347f4d7e initialized
+2017-10-17 19:50:07 INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_] : [BIGINT]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_] : [BIGINT]) - [3]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_] : [BIGINT]) - [4]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_] : [VARCHAR]) - [For Whom The Bell Tolls]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_] : [NUMERIC]) - [5.89]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_] : [BIGINT]) - [5]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_] : [BIGINT]) - [6]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_] : [VARCHAR]) - [To Kill A Mockingbird]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_] : [NUMERIC]) - [9.50]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_] : [BIGINT]) - [7]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_] : [BIGINT]) - [8]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_] : [VARCHAR]) - [No Country For Old Men]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_] : [VARCHAR]) - [No Country For Old Men]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_] : [NUMERIC]) - [9.99]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_] : [BIGINT]) - [9]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_] : [BIGINT]) - [10]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_] : [VARCHAR]) - [Their Eyes Were Watching God]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_] : [NUMERIC]) - [12.99]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_] : [BIGINT]) - [11]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_] : [BIGINT]) - [12]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_] : [VARCHAR]) - [The Grapes Of Wrath]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_] : [VARCHAR]) - [Of Mice And Men]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_] : [NUMERIC]) - [8.99]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_] : [BIGINT]) - [13]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_] : [BIGINT]) - [14]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_] : [VARCHAR]) - [No Country For Old Men]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_] : [VARCHAR]) - [No Country For Old Men]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_] : [NUMERIC]) - [6.99]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_] : [BIGINT]) - [15]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_] : [BIGINT]) - [16]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_] : [VARCHAR]) - [The Grapes Of Wrath]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_] : [VARCHAR]) - [As I Lay Dying]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_] : [NUMERIC]) - [6.99]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_] : [BIGINT]) - [17]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_] : [BIGINT]) - [18]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_] : [VARCHAR]) - [I Capture The Castle]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_] : [VARCHAR]) - [No Country For Old Men]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_] : [NUMERIC]) - [7.99]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_] : [BIGINT]) - [19]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_] : [BIGINT]) - [20]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_] : [VARCHAR]) - [No Country For Old Men]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_] : [VARCHAR]) - [No Country For Old Men]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_] : [NUMERIC]) - [5.99]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_] : [BIGINT]) - [21]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_] : [BIGINT]) - [22]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_] : [VARCHAR]) - [As I Lay Dying]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_] : [VARCHAR]) - [Of Mice And Men]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_] : [NUMERIC]) - [8.99]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_] : [BIGINT]) - [23]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_] : [BIGINT]) - [24]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_] : [VARCHAR]) - [As I Lay Dying]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_] : [VARCHAR]) - [A Confederacy Of Dunces]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_] : [NUMERIC]) - [8.99]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_] : [BIGINT]) - [25]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_] : [BIGINT]) - [26]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_] : [VARCHAR]) - [Their Eyes Were Watching God]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_] : [VARCHAR]) - [I Capture The Castle]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_] : [NUMERIC]) - [10.29]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_] : [BIGINT]) - [27]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_] : [BIGINT]) - [28]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_] : [VARCHAR]) - [A Confederacy Of Dunces]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_] : [NUMERIC]) - [9.99]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_] : [BIGINT]) - [29]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_] : [BIGINT]) - [30]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_] : [VARCHAR]) - [As I Lay Dying]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_] : [NUMERIC]) - [8.99]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#3]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#5]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#7]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#9]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#11]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#13]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#15]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#17]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#19]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#21]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#23]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#25]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#27]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#29]
+2017-10-17 19:50:08 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002001: Weld SE container 81c7339b-e6f1-4756-988a-181e347f4d7e shut down
+2017-10-17 19:50:08 INFO  org.jboss.weld.bootstrap.WeldStartup: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2017-10-17 19:50:08 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002003: Weld SE container 225648a5-f7f9-4412-8aec-292ca9461075 initialized
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [TIMESTAMP] - [Tue Oct 17 19:50:08 CEST 2017]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [2] as [TIMESTAMP] - [Tue Oct 17 19:50:08 CEST 2017]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [3] as [BIGINT] - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [4] as [BLOB] - [[B@2133661d]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [5] as [VARCHAR] - [text]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [6] as [BIGINT] - [31]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [TIMESTAMP] - [Tue Oct 17 19:50:08 CEST 2017]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [2] as [TIMESTAMP] - [Tue Oct 17 19:50:08 CEST 2017]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [3] as [BIGINT] - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [4] as [BIGINT] - [31]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [5] as [VARCHAR] - [Test]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [6] as [VARCHAR] - [Test]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [7] as [NUMERIC] - [10.8900000000000005684341886080801486968994140625]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [8] as [BIGINT] - [10000]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [VARCHAR] - [ISBN1508262608219]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [2] as [BIGINT] - [10000]
+2017-10-17 19:50:08 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002001: Weld SE container 225648a5-f7f9-4412-8aec-292ca9461075 shut down
+2017-10-17 19:50:08 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:test]
+2017-10-17 19:50:08 INFO  org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: bookstoreTestDS
+	...]
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration boolean -> org.hibernate.type.BooleanType@be64738
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration boolean -> org.hibernate.type.BooleanType@be64738
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@be64738
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@4b5d6a01
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration true_false -> org.hibernate.type.TrueFalseType@3e2e18f2
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration yes_no -> org.hibernate.type.YesNoType@703580bf
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration byte -> org.hibernate.type.ByteType@5bd03f44
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration byte -> org.hibernate.type.ByteType@5bd03f44
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@5bd03f44
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration character -> org.hibernate.type.CharacterType@e056f20
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration char -> org.hibernate.type.CharacterType@e056f20
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@e056f20
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration short -> org.hibernate.type.ShortType@9225652
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration short -> org.hibernate.type.ShortType@9225652
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Short -> org.hibernate.type.ShortType@9225652
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration integer -> org.hibernate.type.IntegerType@63355449
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration int -> org.hibernate.type.IntegerType@63355449
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@63355449
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration long -> org.hibernate.type.LongType@30ee2816
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration long -> org.hibernate.type.LongType@30ee2816
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Long -> org.hibernate.type.LongType@30ee2816
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration float -> org.hibernate.type.FloatType@636be97c
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration float -> org.hibernate.type.FloatType@636be97c
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Float -> org.hibernate.type.FloatType@636be97c
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration double -> org.hibernate.type.DoubleType@3911c2a7
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration double -> org.hibernate.type.DoubleType@3911c2a7
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@3911c2a7
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@2145b572
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@2145b572
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration big_integer -> org.hibernate.type.BigIntegerType@1cbbffcd
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@1cbbffcd
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration string -> org.hibernate.type.StringType@28eaa59a
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.String -> org.hibernate.type.StringType@28eaa59a
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration nstring -> org.hibernate.type.StringNVarcharType@35ef1869
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@708f5957
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration url -> org.hibernate.type.UrlType@291ae
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.net.URL -> org.hibernate.type.UrlType@291ae
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration date -> org.hibernate.type.DateType@7193666c
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.sql.Date -> org.hibernate.type.DateType@7193666c
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration time -> org.hibernate.type.TimeType@56620197
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.sql.Time -> org.hibernate.type.TimeType@56620197
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration timestamp -> org.hibernate.type.TimestampType@6973b51b
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@6973b51b
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.util.Date -> org.hibernate.type.TimestampType@6973b51b
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@333291e3
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration calendar -> org.hibernate.type.CalendarType@402bba4f
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@402bba4f
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@402bba4f
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@f5ac9e4
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration locale -> org.hibernate.type.LocaleType@441772e
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@441772e
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration currency -> org.hibernate.type.CurrencyType@14dd9eb7
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@14dd9eb7
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration timezone -> org.hibernate.type.TimeZoneType@7fa98a66
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@7fa98a66
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration class -> org.hibernate.type.ClassType@32eff876
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Class -> org.hibernate.type.ClassType@32eff876
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@7c729a55
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@7c729a55
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@5af3afd9
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration binary -> org.hibernate.type.BinaryType@4567f35d
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration byte[] -> org.hibernate.type.BinaryType@4567f35d
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration [B -> org.hibernate.type.BinaryType@4567f35d
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@1fa268de
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@1fa268de
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@1fa268de
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration row_version -> org.hibernate.type.RowVersionType@3e58a80e
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration image -> org.hibernate.type.ImageType@4a94ee4
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration characters -> org.hibernate.type.CharArrayType@9f116cc
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration char[] -> org.hibernate.type.CharArrayType@9f116cc
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration [C -> org.hibernate.type.CharArrayType@9f116cc
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@7ec7ffd3
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@7ec7ffd3
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@7ec7ffd3
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration text -> org.hibernate.type.TextType@6d763516
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration ntext -> org.hibernate.type.NTextType@245b4bdc
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration blob -> org.hibernate.type.BlobType@74fe5c40
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@74fe5c40
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@131774fe
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration clob -> org.hibernate.type.ClobType@2f9f7dcf
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@2f9f7dcf
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration nclob -> org.hibernate.type.NClobType@2a3b5b47
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@2a3b5b47
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@689604d9
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@4c371370
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration serializable -> org.hibernate.type.SerializableType@2a65fe7c
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration object -> org.hibernate.type.ObjectType@692f203f
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@692f203f
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@397ef2
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@36a6bea6
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@44e93c1f
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@42373389
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@9b21bd3
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@a62c7cd
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@7661b5a
+2017-10-17 19:50:08 DEBUG org.hibernate.type.BasicTypeRegistry: Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@7c36db44
+2017-10-17 19:50:08 WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-10-17 19:50:08 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH10001005: using driver [org.h2.Driver] at URL [jdbc:h2:mem:test]
+2017-10-17 19:50:08 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH10001001: Connection properties: {}
+2017-10-17 19:50:08 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH10001003: Autocommit mode: false
+2017-10-17 19:50:08 INFO  org.hibernate.engine.jdbc.connections.internal.PooledConnections: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-10-17 19:50:08 INFO  org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-17 19:50:08 WARN  org.hibernate.cfg.AnnotationBinder: HHH000457: Joined inheritance hierarchy [org.bmsource.bookstore.model.entity.Product] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+2017-10-17 19:50:08 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterTypeAdapter: Created AttributeConverterTypeAdapter -> converted::org.bmsource.bookstore.model.util.ColorConverter
+2017-10-17 19:50:08 TRACE org.hibernate.type.TypeFactory$TypeScopeImpl: Scoping types to session factory org.hibernate.internal.SessionFactoryImpl@14b789f6
+2017-10-17 19:50:08 INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate: HHH000228: Running hbm2ddl schema update
+2017-10-17 19:50:08 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: `ORDER`
+2017-10-17 19:50:08 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: AUTHOR
+2017-10-17 19:50:08 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: BOOK_AUTHOR
+2017-10-17 19:50:08 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: CONTENT
+2017-10-17 19:50:08 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: ORDER_PRODUCT
+2017-10-17 19:50:08 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: PRODUCT
+2017-10-17 19:50:08 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: PRODUCT_BOOK
+2017-10-17 19:50:08 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: ROLE
+2017-10-17 19:50:08 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: USER
+2017-10-17 19:50:08 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: USER_ROLE
+2017-10-17 19:50:08 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: user_roles
+2017-10-17 19:50:08 INFO  org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl: HHH000262: Table not found: USER_SETTINGS
+2017-10-17 19:50:08 INFO  org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-10-17 19:50:08 WARN  org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator$GenerationProcess: Hibernate hbm2ddl-auto setting was specified [update] in combination with JPA schema-generation; combination will likely cause trouble
+2017-10-17 19:50:08 INFO  org.jboss.weld.bootstrap.WeldStartup: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2017-10-17 19:50:08 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002003: Weld SE container 4963911f-d0ea-494c-8505-d67d26b8fa5a initialized
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_0_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.04]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_0_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.071]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_0_0_] : [BIGINT]) - [3]
+2017-10-17 19:50:08 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [STATUS5_0_0_]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([USER_ID6_0_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#1]
+2017-10-17 19:50:08 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002001: Weld SE container 4963911f-d0ea-494c-8505-d67d26b8fa5a shut down
+2017-10-17 19:50:08 INFO  org.jboss.weld.bootstrap.WeldStartup: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2017-10-17 19:50:08 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002003: Weld SE container ae25ff4c-1330-412c-9033-de86ce0a3e98 initialized
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_0_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.04]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_0_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.071]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_0_0_] : [BIGINT]) - [3]
+2017-10-17 19:50:08 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [STATUS5_0_0_]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([USER_ID6_0_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_0_] : [BIGINT]) - [3]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_0_] : [VARCHAR]) - [null]
+2017-10-17 19:50:08 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: null -> org.bmsource.bookstore.model.util.Color@745f
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_0_] : [BIGINT]) - [3]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_0_] : [INTEGER]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_0_1_] : [TIMESTAMP]) - [2017-07-31 15:37:59.04]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_0_1_] : [TIMESTAMP]) - [2017-07-31 15:37:59.071]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_0_1_] : [BIGINT]) - [3]
+2017-10-17 19:50:08 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [STATUS5_0_1_]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([USER_ID6_0_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_3_] : [BIGINT]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_3_] : [BIGINT]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_3_] : [BIGINT]) - [3]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_0_] : [BIGINT]) - [9]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_0_] : [VARCHAR]) - [null]
+2017-10-17 19:50:08 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: null -> org.bmsource.bookstore.model.util.Color@745f
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_0_] : [BIGINT]) - [9]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_0_] : [INTEGER]) - [3]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_3_] : [BIGINT]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_3_] : [BIGINT]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_3_] : [BIGINT]) - [9]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_0_] : [BIGINT]) - [11]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_0_] : [VARCHAR]) - [null]
+2017-10-17 19:50:08 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: null -> org.bmsource.bookstore.model.util.Color@745f
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_0_] : [BIGINT]) - [11]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_0_] : [INTEGER]) - [3]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_3_] : [BIGINT]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_3_] : [BIGINT]) - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_3_] : [BIGINT]) - [11]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [3]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID1_3_0_] : [BIGINT]) - [4]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_3_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_3_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_3_0_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT5_3_0_] : [BLOB]) - [[B@5d497a91]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_6_3_0_] : [VARCHAR]) - [text]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_1_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_1_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_1_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_1_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_1_] : [BIGINT]) - [4]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_1_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_1_] : [VARCHAR]) - [For Whom The Bell Tolls]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_1_] : [NUMERIC]) - [5.89]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_1_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [4]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_0_] : [BIGINT]) - [3]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#3]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [9]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID1_3_0_] : [BIGINT]) - [10]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_3_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_3_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_3_0_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT5_3_0_] : [BLOB]) - [[B@5793b87]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_6_3_0_] : [VARCHAR]) - [text]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_1_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_1_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_1_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_1_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_1_] : [BIGINT]) - [10]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_1_] : [VARCHAR]) - [Their Eyes Were Watching God]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_1_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_1_] : [NUMERIC]) - [12.99]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_1_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [10]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_0_] : [BIGINT]) - [9]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#9]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [11]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID1_3_0_] : [BIGINT]) - [12]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_3_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_3_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_3_0_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT5_3_0_] : [BLOB]) - [[B@48a0c8aa]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_6_3_0_] : [VARCHAR]) - [text]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_1_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_1_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_1_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_1_] : [BIGINT]) - [0]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_1_] : [BIGINT]) - [12]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_1_] : [VARCHAR]) - [The Grapes Of Wrath]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_1_] : [VARCHAR]) - [Of Mice And Men]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_1_] : [NUMERIC]) - [8.99]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_1_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [12]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_0_] : [BIGINT]) - [11]
+2017-10-17 19:50:08 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#11]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [TIMESTAMP] - [2017-07-31 15:37:59.04]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [2] as [TIMESTAMP] - [Tue Oct 17 19:50:08 CEST 2017]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [3] as [BIGINT] - [4]
+2017-10-17 19:50:08 TRACE org.hibernate.type.EnumType$EnumValueMapperSupport: Binding [IN_PROGRESS] to parameter: [4]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [5] as [BIGINT] - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [6] as [BIGINT] - [1]
+2017-10-17 19:50:08 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [7] as [BIGINT] - [3]
+2017-10-17 19:50:08 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002001: Weld SE container ae25ff4c-1330-412c-9033-de86ce0a3e98 shut down
+2017-10-17 19:50:08 INFO  org.jboss.weld.bootstrap.WeldStartup: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2017-10-17 19:50:09 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002003: Weld SE container efe46daf-0338-4551-8b68-397f1898e445 initialized
+2017-10-17 19:50:09 INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [TIMESTAMP] - [Wed Sep 27 19:50:09 CEST 2017]
+2017-10-17 19:50:09 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002001: Weld SE container efe46daf-0338-4551-8b68-397f1898e445 shut down
+2017-10-17 19:50:09 INFO  org.jboss.weld.bootstrap.WeldStartup: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2017-10-17 19:50:09 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002003: Weld SE container 9c1772a0-10fd-4995-b302-220a059c5f15 initialized
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_3_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_0_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.04]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_0_0_] : [TIMESTAMP]) - [2017-10-17 19:50:08.976]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_0_0_] : [BIGINT]) - [4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [IN_PROGRESS] as column [STATUS5_0_0_]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([USER_ID6_0_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_2_] : [VARCHAR]) - [null]
+2017-10-17 19:50:09 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: null -> org.bmsource.bookstore.model.util.Color@745f
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_2_] : [INTEGER]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_3_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_3_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_3_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_3_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_3_] : [BIGINT]) - [4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_3_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_3_] : [VARCHAR]) - [For Whom The Bell Tolls]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_3_] : [NUMERIC]) - [5.89]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_3_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_3_] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_2_] : [VARCHAR]) - [null]
+2017-10-17 19:50:09 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: null -> org.bmsource.bookstore.model.util.Color@745f
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_2_] : [INTEGER]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_3_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_3_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_3_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_3_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_3_] : [BIGINT]) - [10]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_3_] : [VARCHAR]) - [Their Eyes Were Watching God]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_3_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_3_] : [NUMERIC]) - [12.99]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_3_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_3_] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_2_] : [VARCHAR]) - [null]
+2017-10-17 19:50:09 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: null -> org.bmsource.bookstore.model.util.Color@745f
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_2_] : [INTEGER]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_3_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_3_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_3_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_3_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_3_] : [BIGINT]) - [12]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_3_] : [VARCHAR]) - [The Grapes Of Wrath]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_3_] : [VARCHAR]) - [Of Mice And Men]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_3_] : [NUMERIC]) - [8.99]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_3_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#11]
+2017-10-17 19:50:09 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$1: Converted value on binding : org.bmsource.bookstore.model.util.Color@13651 -> 50|50|50
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [VARCHAR] - [50|50|50]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [2] as [INTEGER] - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [3] as [BIGINT] - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [4] as [BIGINT] - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_3_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_0_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.04]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_0_0_] : [TIMESTAMP]) - [2017-10-17 19:50:08.976]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_0_0_] : [BIGINT]) - [4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [IN_PROGRESS] as column [STATUS5_0_0_]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([USER_ID6_0_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_2_] : [VARCHAR]) - [50|50|50]
+2017-10-17 19:50:09 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: 50|50|50 -> org.bmsource.bookstore.model.util.Color@13651
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_2_] : [INTEGER]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_3_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_3_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_3_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_3_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_3_] : [BIGINT]) - [4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_3_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_3_] : [VARCHAR]) - [For Whom The Bell Tolls]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_3_] : [NUMERIC]) - [5.89]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_3_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_3_] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_2_] : [VARCHAR]) - [null]
+2017-10-17 19:50:09 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: null -> org.bmsource.bookstore.model.util.Color@745f
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_2_] : [INTEGER]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_3_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_3_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_3_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_3_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_3_] : [BIGINT]) - [10]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_3_] : [VARCHAR]) - [Their Eyes Were Watching God]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_3_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_3_] : [NUMERIC]) - [12.99]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_3_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID2_5_3_] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_2_] : [VARCHAR]) - [null]
+2017-10-17 19:50:09 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: null -> org.bmsource.bookstore.model.util.Color@745f
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_2_] : [INTEGER]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_3_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_3_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_3_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_3_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_3_] : [BIGINT]) - [12]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_3_] : [VARCHAR]) - [The Grapes Of Wrath]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_3_] : [VARCHAR]) - [Of Mice And Men]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_3_] : [NUMERIC]) - [8.99]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_3_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#11]
+2017-10-17 19:50:09 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002001: Weld SE container 9c1772a0-10fd-4995-b302-220a059c5f15 shut down
+2017-10-17 19:50:09 INFO  org.jboss.weld.bootstrap.WeldStartup: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2017-10-17 19:50:09 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002003: Weld SE container f43a9081-7842-4f29-9eee-66c06ca8cbab initialized
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_0_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.04]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_0_0_] : [TIMESTAMP]) - [2017-10-17 19:50:08.976]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_0_0_] : [BIGINT]) - [4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [IN_PROGRESS] as column [STATUS5_0_0_]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([USER_ID6_0_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_2_] : [VARCHAR]) - [50|50|50]
+2017-10-17 19:50:09 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: 50|50|50 -> org.bmsource.bookstore.model.util.Color@13651
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_2_] : [INTEGER]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_2_] : [VARCHAR]) - [null]
+2017-10-17 19:50:09 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: null -> org.bmsource.bookstore.model.util.Color@745f
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_2_] : [INTEGER]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_2_] : [VARCHAR]) - [null]
+2017-10-17 19:50:09 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: null -> org.bmsource.bookstore.model.util.Color@745f
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_2_] : [INTEGER]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_0_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_0_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_0_] : [BIGINT]) - [4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_0_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_0_] : [VARCHAR]) - [For Whom The Bell Tolls]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_0_] : [NUMERIC]) - [5.89]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_0_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_0_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_0_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_0_] : [BIGINT]) - [10]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_0_] : [VARCHAR]) - [Their Eyes Were Watching God]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_0_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_0_] : [NUMERIC]) - [12.99]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_0_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_0_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_0_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_0_] : [BIGINT]) - [12]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_0_] : [VARCHAR]) - [The Grapes Of Wrath]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_0_] : [VARCHAR]) - [Of Mice And Men]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_0_] : [NUMERIC]) - [8.99]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_0_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID1_8_3_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_0_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.04]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_0_0_] : [TIMESTAMP]) - [2017-10-17 19:50:08.976]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_0_0_] : [BIGINT]) - [4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [IN_PROGRESS] as column [STATUS5_0_0_]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([USER_ID6_0_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_2_] : [VARCHAR]) - [50|50|50]
+2017-10-17 19:50:09 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: 50|50|50 -> org.bmsource.bookstore.model.util.Color@13651
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_2_] : [INTEGER]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_8_3_] : [TIMESTAMP]) - [2017-07-31 15:37:58.955]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_8_3_] : [TIMESTAMP]) - [2017-07-31 15:37:58.955]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_8_3_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ADDRESS5_8_3_] : [VARCHAR]) - [null]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CITY6_8_3_] : [VARCHAR]) - [null]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([STATE7_8_3_] : [VARCHAR]) - [null]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([FIRST_NA8_8_3_] : [VARCHAR]) - [James]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([LAST_NAM9_8_3_] : [VARCHAR]) - [Roberts]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([LOGIN10_8_3_] : [VARCHAR]) - [null]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ROLE_ID1_9_3_] : [BIGINT]) - [52]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID1_8_3_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_2_] : [VARCHAR]) - [null]
+2017-10-17 19:50:09 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: null -> org.bmsource.bookstore.model.util.Color@745f
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_2_] : [INTEGER]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID1_8_3_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_2_] : [VARCHAR]) - [null]
+2017-10-17 19:50:09 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: null -> org.bmsource.bookstore.model.util.Color@745f
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_2_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_2_] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_2_] : [INTEGER]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_0_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_0_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_0_] : [BIGINT]) - [4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_0_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_0_] : [VARCHAR]) - [For Whom The Bell Tolls]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_0_] : [NUMERIC]) - [5.89]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_0_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.User.orders#1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.User.settings#1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [52]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_7_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.955]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_7_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.955]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_7_0_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([role5_7_0_] : [VARCHAR]) - [basic]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Role.users#52]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_0_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_0_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_0_] : [BIGINT]) - [10]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_0_] : [VARCHAR]) - [Their Eyes Were Watching God]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_0_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_0_] : [NUMERIC]) - [12.99]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_0_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_0_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_0_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_0_] : [BIGINT]) - [12]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_0_] : [VARCHAR]) - [The Grapes Of Wrath]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_0_] : [VARCHAR]) - [Of Mice And Men]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_0_] : [NUMERIC]) - [8.99]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_0_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#11]
+2017-10-17 19:50:09 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002001: Weld SE container f43a9081-7842-4f29-9eee-66c06ca8cbab shut down
+2017-10-17 19:50:09 INFO  org.jboss.weld.bootstrap.WeldStartup: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2017-10-17 19:50:09 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002003: Weld SE container d38e66b2-df42-4961-a075-ad2e0fe0af28 initialized
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_0_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.04]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_0_0_] : [TIMESTAMP]) - [2017-10-17 19:50:08.976]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_0_0_] : [BIGINT]) - [4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [IN_PROGRESS] as column [STATUS5_0_0_]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([USER_ID6_0_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#1]
+2017-10-17 19:50:09 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002001: Weld SE container d38e66b2-df42-4961-a075-ad2e0fe0af28 shut down
+2017-10-17 19:50:09 INFO  org.jboss.weld.bootstrap.WeldStartup: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2017-10-17 19:50:09 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002003: Weld SE container ee03096f-67e2-4807-93dd-224b674eb512 initialized
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID1_0_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_0_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.04]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_0_0_] : [TIMESTAMP]) - [2017-10-17 19:50:08.976]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_0_0_] : [BIGINT]) - [4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [IN_PROGRESS] as column [STATUS5_0_0_]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([USER_ID6_0_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_1_] : [VARCHAR]) - [50|50|50]
+2017-10-17 19:50:09 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: 50|50|50 -> org.bmsource.bookstore.model.util.Color@13651
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_1_] : [INTEGER]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_0__] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_0__] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_0__] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID1_0_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_1_] : [VARCHAR]) - [null]
+2017-10-17 19:50:09 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: null -> org.bmsource.bookstore.model.util.Color@745f
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_1_] : [INTEGER]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_0__] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_0__] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_0__] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID1_0_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([COLOR3_4_1_] : [VARCHAR]) - [null]
+2017-10-17 19:50:09 DEBUG org.hibernate.type.descriptor.converter.AttributeConverterSqlTypeDescriptorAdapter$2: Converted value on extraction: null -> org.bmsource.bookstore.model.util.Color@745f
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_1_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_1_] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([quantity4_4_1_] : [INTEGER]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_0__] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ORDER_ID1_4_0__] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_2_4_0__] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_0_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_0_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_0_] : [BIGINT]) - [4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_0_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_0_] : [VARCHAR]) - [For Whom The Bell Tolls]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_0_] : [NUMERIC]) - [5.89]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_0_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_0_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_0_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_0_] : [BIGINT]) - [10]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_0_] : [VARCHAR]) - [Their Eyes Were Watching God]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_0_] : [VARCHAR]) - [Another Bullshit Night in Suck City]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_0_] : [NUMERIC]) - [12.99]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_0_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([PRODUCT_1_5_0_] : [VARCHAR]) - [BOOK]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD3_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi4_5_0_] : [TIMESTAMP]) - [2017-07-31 15:37:58.802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version5_5_0_] : [BIGINT]) - [0]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([CONTENT_9_5_0_] : [BIGINT]) - [12]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([DESCRIPT6_5_0_] : [VARCHAR]) - [The Grapes Of Wrath]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([NAME7_5_0_] : [VARCHAR]) - [Of Mice And Men]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([price8_5_0_] : [NUMERIC]) - [8.99]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ISBN1_6_0_] : [VARCHAR]) - [ISBN1501508278802]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Book.authors#11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [BIGINT] - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_0_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.04]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_0_0_] : [TIMESTAMP]) - [2017-10-17 19:50:08.976]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_0_0_] : [BIGINT]) - [4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [IN_PROGRESS] as column [STATUS5_0_0_]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([USER_ID6_0_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#1]
+2017-10-17 19:50:09 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002001: Weld SE container ee03096f-67e2-4807-93dd-224b674eb512 shut down
+2017-10-17 19:50:09 INFO  org.jboss.weld.bootstrap.WeldStartup: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2017-10-17 19:50:09 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002003: Weld SE container 9d0b26f1-8f90-4476-9df3-0f97d59a6e1b initialized
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicBinder: binding parameter [1] as [VARCHAR] - [As I Lay Dying]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID1_0_] : [BIGINT]) - [10]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.155]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.155]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [STATUS5_0_]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([USER_ID6_0_] : [BIGINT]) - [7]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID1_0_] : [BIGINT]) - [17]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.224]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.24]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_0_] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [STATUS5_0_]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([USER_ID6_0_] : [BIGINT]) - [10]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID1_0_] : [BIGINT]) - [18]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.24]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.24]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_0_] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [STATUS5_0_]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([USER_ID6_0_] : [BIGINT]) - [10]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([ID1_0_] : [BIGINT]) - [19]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdD2_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.24]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModi3_0_] : [TIMESTAMP]) - [2017-07-31 15:37:59.255]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version4_0_] : [BIGINT]) - [2]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [STATUS5_0_]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([USER_ID6_0_] : [BIGINT]) - [10]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#10]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#17]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#18]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#19]
+2017-10-17 19:50:09 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002001: Weld SE container 9d0b26f1-8f90-4476-9df3-0f97d59a6e1b shut down
+2017-10-17 19:50:09 INFO  org.jboss.weld.bootstrap.WeldStartup: WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2017-10-17 19:50:09 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002003: Weld SE container 02fe397f-75f0-41aa-b96c-137422eaaede initialized
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.04]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModifiedDate] : [TIMESTAMP]) - [2017-10-17 19:50:08.976]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version] : [BIGINT]) - [4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [IN_PROGRESS] as column [orderStatus]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([userId] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [2]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.071]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModifiedDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.071]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version] : [BIGINT]) - [2]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [orderStatus]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([userId] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [2]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [19]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [2]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [2]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [27]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.071]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModifiedDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.087]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version] : [BIGINT]) - [2]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [orderStatus]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([userId] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [13]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [25]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.087]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModifiedDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.087]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [orderStatus]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([userId] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [27]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [5]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.087]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModifiedDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.102]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [orderStatus]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([userId] : [BIGINT]) - [2]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [5]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [5]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [5]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [5]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [5]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [5]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [25]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [6]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.102]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModifiedDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.124]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version] : [BIGINT]) - [3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [orderStatus]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([userId] : [BIGINT]) - [2]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [6]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [6]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [6]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [6]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [6]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [23]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [7]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.124]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModifiedDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.124]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [orderStatus]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([userId] : [BIGINT]) - [4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [7]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [8]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.124]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModifiedDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.14]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [orderStatus]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([userId] : [BIGINT]) - [5]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [8]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [23]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.14]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModifiedDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.14]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version] : [BIGINT]) - [2]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [orderStatus]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([userId] : [BIGINT]) - [6]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [13]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [27]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [10]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [10]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.155]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModifiedDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.155]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [orderStatus]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([userId] : [BIGINT]) - [8]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [25]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [12]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.171]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModifiedDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.171]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version] : [BIGINT]) - [2]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [orderStatus]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([userId] : [BIGINT]) - [8]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [12]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [19]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [12]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [12]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [21]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [13]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.187]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModifiedDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.187]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [orderStatus]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([userId] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [13]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [14]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.187]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModifiedDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.202]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version] : [BIGINT]) - [2]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [orderStatus]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([userId] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [14]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [14]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [14]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [17]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [15]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.202]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModifiedDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.202]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [orderStatus]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([userId] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [15]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [5]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [16]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([createdDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.202]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([lastModifiedDate] : [TIMESTAMP]) - [2017-07-31 15:37:59.224]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([version] : [BIGINT]) - [2]
+2017-10-17 19:50:09 TRACE org.hibernate.type.EnumType$NamedEnumValueMapper: Returning [NEW] as column [orderStatus]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([userId] : [BIGINT]) - [9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [16]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [16]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [16]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [27]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [17]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [17]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [17]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [17]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [17]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [17]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [19]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [18]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [18]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [19]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [19]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [15]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [19]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([orderId] : [BIGINT]) - [19]
+2017-10-17 19:50:09 TRACE org.hibernate.type.descriptor.sql.BasicExtractor: extracted value ([productId] : [BIGINT]) - [23]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#1]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#2]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#3]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#4]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#5]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#6]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#7]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#8]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#9]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#11]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#12]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#13]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#14]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#15]
+2017-10-17 19:50:09 TRACE org.hibernate.type.CollectionType: Created collection wrapper: [org.bmsource.bookstore.model.entity.Order.orderProducts#16]
+2017-10-17 19:50:09 INFO  org.jboss.weld.environment.se.WeldContainer: WELD-ENV-002001: Weld SE container 02fe397f-75f0-41aa-b96c-137422eaaede shut down
+2017-10-17 19:50:09 INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH10001008: Cleaning up connection pool [jdbc:h2:mem:test]
+2017-10-17 19:50:10 INFO  org.xnio.Xnio: XNIO version 3.2.0.Beta4
+2017-10-17 19:50:10 INFO  org.xnio.nio.NioXnio: XNIO NIO Implementation Version 3.2.0.Beta4
+2017-10-17 19:50:10 INFO  org.jboss.remoting3.EndpointImpl: JBoss Remoting version (unknown)
+2017-10-17 19:50:20 WARN  org.jboss.as.arquillian.container.ArchiveDeployer: Cannot undeploy: test.war
+org.jboss.as.controller.client.helpers.standalone.ServerDeploymentHelper$ServerDeploymentException: java.lang.RuntimeException: java.net.ConnectException: JBAS012144: Could not connect to http-remoting://127.0.0.1:9990. The connection timed out
+	at org.jboss.as.controller.client.helpers.standalone.ServerDeploymentHelper.undeploy(ServerDeploymentHelper.java:109)
+	at org.jboss.as.arquillian.container.ArchiveDeployer.undeploy(ArchiveDeployer.java:55)
+	at org.jboss.as.arquillian.container.CommonDeployableContainer.undeploy(CommonDeployableContainer.java:152)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$4.call(ContainerDeployController.java:205)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$4.call(ContainerDeployController.java:185)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.executeOperation(ContainerDeployController.java:271)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.undeploy(ContainerDeployController.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createDeploymentContext(ContainerDeploymentContextHandler.java:78)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.container.impl.client.ContainerDeploymentContextHandler.createContainerContext(ContainerDeploymentContextHandler.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:145)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:116)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:67)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$2.perform(ContainerDeployController.java:119)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController$2.perform(ContainerDeployController.java:110)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachDeployment(ContainerDeployController.java:263)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.forEachDeployedDeployment(ContainerDeployController.java:249)
+	at org.jboss.arquillian.container.impl.client.container.ContainerDeployController.undeployManaged(ContainerDeployController.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:145)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:116)
+	at org.jboss.arquillian.core.impl.EventImpl.fire(EventImpl.java:67)
+	at org.jboss.arquillian.container.test.impl.client.ContainerEventController.execute(ContainerEventController.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.invokeObservers(EventContextImpl.java:99)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:81)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createClassContext(TestContextHandler.java:84)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.test.impl.TestContextHandler.createSuiteContext(TestContextHandler.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.jboss.arquillian.core.impl.ObserverImpl.invoke(ObserverImpl.java:94)
+	at org.jboss.arquillian.core.impl.EventContextImpl.proceed(EventContextImpl.java:88)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:145)
+	at org.jboss.arquillian.core.impl.ManagerImpl.fire(ManagerImpl.java:116)
+	at org.jboss.arquillian.test.impl.EventTestRunnerAdaptor.afterClass(EventTestRunnerAdaptor.java:87)
+	at org.jboss.arquillian.junit.Arquillian$3$1.evaluate(Arquillian.java:212)
+	at org.jboss.arquillian.junit.Arquillian.multiExecute(Arquillian.java:345)
+	at org.jboss.arquillian.junit.Arquillian.access$200(Arquillian.java:49)
+	at org.jboss.arquillian.junit.Arquillian$3.evaluate(Arquillian.java:207)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.jboss.arquillian.junit.Arquillian.run(Arquillian.java:155)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:367)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:274)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:161)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+Caused by: java.lang.RuntimeException: java.net.ConnectException: JBAS012144: Could not connect to http-remoting://127.0.0.1:9990. The connection timed out
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeAsync(AbstractModelControllerClient.java:103)
+	at org.jboss.as.controller.client.helpers.standalone.impl.ModelControllerClientServerDeploymentManager.executeOperation(ModelControllerClientServerDeploymentManager.java:50)
+	at org.jboss.as.controller.client.helpers.standalone.impl.AbstractServerDeploymentManager.execute(AbstractServerDeploymentManager.java:79)
+	at org.jboss.as.controller.client.helpers.standalone.ServerDeploymentHelper.undeploy(ServerDeploymentHelper.java:106)
+	... 83 more
+Caused by: java.net.ConnectException: JBAS012144: Could not connect to http-remoting://127.0.0.1:9990. The connection timed out
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:119)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:256)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:70)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:204)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:148)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:67)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:117)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:92)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:236)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:141)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeAsync(AbstractModelControllerClient.java:101)
+	... 86 more
