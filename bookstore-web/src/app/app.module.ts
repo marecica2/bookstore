@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from "./app-routing.module";
 import { HomeComponent } from "./home.component";
 import { PageNotFoundComponent } from './page-not-found.component';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule( {
     imports: [
@@ -18,7 +19,8 @@ import { PageNotFoundComponent } from './page-not-found.component';
         HttpModule,
         CommonModule,
         RouterModule,
-        AppRoutingModule
+        AppRoutingModule,
+        AdminModule,
     ],
     declarations: [
         AppComponent,
