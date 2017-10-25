@@ -7,6 +7,8 @@ import { UsersComponent } from "./users/users.component";
 import { AdminRoutingModule } from "./admin-routing.module";
 import { ProductsComponent } from './products/products.component';
 import { UserService } from './users/user.service';
+import { UserComponent } from './users/user.component';
+import { AdminDashboardComponent } from './admin.dashboard.component';
 
 
 @NgModule( {
@@ -17,7 +19,9 @@ import { UserService } from './users/user.service';
     ],
     declarations: [
         AdminComponent,
+        AdminDashboardComponent,
         UsersComponent,
+        UserComponent,
         ProductsComponent,
     ],
     providers: [

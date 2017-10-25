@@ -5,27 +5,30 @@ import { User } from "./user";
 
 @Component( {
     selector: 'admin-users-component',
-    template: `
-        <div>users</div>
-        <ul>
-          <li *ngFor="let user of users" [class.selected]="user === selectedUser" (click)="onSelect(user)">
-            <span class="badge">{{user.id}}</span> {{user.firstName}} {{user.lastName}}
-            <button class="delete" (click)="delete(user); $event.stopPropagation()">block</button>    
-          </li>
-        </ul>        
-    `,
+    templateUrl: "./users.component.html",
 } )
 export class UsersComponent implements OnInit {
-    private users: User[];
+    public users: User[];
+    public selectedUser: User;
 
     constructor(
         private userService: UserService ) { }
 
     ngOnInit(): void {
+        //this.users = [];
+        //this.users.push(new User(1, "test@gmail.com", "Test", "Test"));
         this.getUsers();
     }
 
     getUsers(): void {
         this.userService.getUsers().then( users => this.users = users );
     }
+    
+    block(user: User): void {
+        console.log("user was blocked", user);
+    }
+    
+    onSelect( user: User ): void {
+        this.selectedUser = user;
+    }    
 }

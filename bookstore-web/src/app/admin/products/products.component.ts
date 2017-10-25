@@ -2,9 +2,7 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: 'admin-products-component',    
-    template: `
-        <div>products</div>
-    `,
+    templateUrl: './products.component.html'
 })
 export class ProductsComponent {
     

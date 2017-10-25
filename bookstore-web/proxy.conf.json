@@ -7,5 +7,15 @@
     },
     "changeOrigin": true,
     "logLevel": "debug"
+  },
+  
+  "/api2": {
+    "target": "http://docker:8090",
+    "secure": false,
+    "pathRewrite": {
+      "^/api2": ""
+    },
+    "changeOrigin": true,
+    "logLevel": "debug"
   }
 }
