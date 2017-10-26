@@ -21,6 +21,7 @@ services:
     ports:
     - "8080:8080"
     - "9990:9990"
+    - "8787:8787"
     links:
     - h2-db
     - activemq
